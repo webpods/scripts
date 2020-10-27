@@ -1,0 +1,11 @@
+#!/bin/bash
+# Unblock all block-flood
+# ----
+# Added work_dir for service call feature
+
+work_dir=/root/block-flood
+
+ip route show|grep blackhole|awk '{print "ip route del blackhole",$NF}' >un;bash un;rm -f un
+>${work_dir}/bad_ips
+>${work_dir}/banned_ips.txt
+>${work_dir}/._tmp_blackhole_list

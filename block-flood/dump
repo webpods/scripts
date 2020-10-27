@@ -1,0 +1,20 @@
+#!/bin/bash
+# This program is meant to save
+# the blackholes in the routing
+# table.
+#
+# What is the working directory?
+work_dir=/root/block-flood
+
+# Our variable that we need to use for timestamping
+# Save in epoch time
+dated=`date +%s`;
+
+function dump () {
+	ip route|grep bl|awk '{print $2}'> $work_dir'/'$dated'_dump.txt'
+	echo 'blackhole has been dumped to '$work_dir'/'$dated'_dump.txt'
+}
+
+dump
+
+exit 1

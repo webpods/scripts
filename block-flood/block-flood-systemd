@@ -1,0 +1,18 @@
+[Unit]
+Description=Conseev block-flood service
+After=network.target
+
+[Service]
+Type=simple
+# Another Type: forking
+User=root
+WorkingDirectory=/root/block-flood
+PIDFile=/var/run/block-flood.pid
+ExecStart=/root/block-flood/block-flood.sh
+ExecStartPost=/bin/sh -c 'umask 022; pgrep block-flood.sh > /var/run/block-flood.pid'
+ExecStop=/bin/kill -INT -- $MAINPID
+ExecStopPost=/bin/rm -f /var/run/block-flood.lock
+
+# Need to add blocked/whitelist/unblock
+[Install]
+WantedBy=multi-user.target
