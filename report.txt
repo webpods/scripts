@@ -1,0 +1,64 @@
+
+  -- General Information --
+
+   Application Information
+   -------------------------
+    Installed Version . . . . . . . . . . . . . . . . : Hard Disk Sentinel 0.18c
+    Current Date And Time . . . . . . . . . . . . . . : 11-7-20 18:53:33
+
+   Computer Information
+   ----------------------
+    Computer Name . . . . . . . . . . . . . . . . . . : server.webpods.com
+    MAC Address . . . . . . . . . . . . . . . . . . . : A2:47:EE:53:CF:47
+
+   System Information
+   --------------------
+    OS Version  . . . . . . . . . . . . . . . . . . . : Linux : 3.10.0-1127.13.1.el7.x86_64 (#1 SMP Tue Jun 23 15:46:38 UTC 2020)
+    Process ID  . . . . . . . . . . . . . . . . . . . : 26737
+    Uptime  . . . . . . . . . . . . . . . . . . . . . : 603735 sec (6 days, 23 hours, 42 min, 15 sec)
+
+
+
+  -- Physical Disk Information - Disk: #0: QEMU    QEMU HARDDISK --
+
+   Hard Disk Summary
+   -------------------
+    Hard Disk Number  . . . . . . . . . . . . . . . . : 0
+    Hard Disk Device  . . . . . . . . . . . . . . . . : /dev/sda
+    Interface . . . . . . . . . . . . . . . . . . . . : SCSI
+    Hard Disk Model ID  . . . . . . . . . . . . . . . : QEMU    QEMU HARDDISK
+    Firmware Revision . . . . . . . . . . . . . . . . : 2.5+
+    Hard Disk Serial Number . . . . . . . . . . . . . : ?
+    Total Size  . . . . . . . . . . . . . . . . . . . : 40959 MB
+    Current Temperature . . . . . . . . . . . . . . . : ?
+    Maximum Temperature (during Entire Lifespan)  . . : ?
+    Health  . . . . . . . . . . . . . . . . . . . . . : ? (Unknown)
+    Performance . . . . . . . . . . . . . . . . . . . : ? (Unknown)
+
+   Properties
+   ------------
+    Vendor Information  . . . . . . . . . . . . . . . : ?
+    Status  . . . . . . . . . . . . . . . . . . . . . : OK
+    Version . . . . . . . . . . . . . . . . . . . . . : 5
+    Device Type . . . . . . . . . . . . . . . . . . . : Disk
+    ASC . . . . . . . . . . . . . . . . . . . . . . . : ?
+    ASCQ  . . . . . . . . . . . . . . . . . . . . . . : 0
+    Bytes Per Sector  . . . . . . . . . . . . . . . . : 512
+    Total Sectors . . . . . . . . . . . . . . . . . . : 83,886,079
+    Unformatted Capacity  . . . . . . . . . . . . . . : 42,949,672,448
+
+   SCSI Information
+   ------------------
+    Removable . . . . . . . . . . . . . . . . . . . . : Not supported
+    Failure Prediction  . . . . . . . . . . . . . . . : Not supported
+    Failure Prediction  . . . . . . . . . . . . . . . : Disabled
+
+
+
+  -- Partition Information --
+
+Logical Drive                           Total Space         Free Space          Free Space %   Used Space            Disk                Block Size  Files        File System  
+/                                       35,822 MB           27,469 MB            77 %          ####----------------  /                   4096        18349568     1481003842   
+/ (Disk #0)                             35,822 MB           27,469 MB            77 %          ####----------------  /dev/sda3           4096        18349568     1481003842   
+/boot (Disk #0)                          1,014 MB              776 MB            77 %          ####----------------  /dev/sda1           4096        524288       1481003842   
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+domain=$1
+user=$(/scripts/whoowns $1)
+addon=$(grep $domain /var/cpanel/userdata/$user/main|awk {'print $2'}|uniq{'print $3'})
+dir=$(grep documentroot /var/cpanel/userdata/$user/$addon|cut -d':' -f2)
+echo "Domains Document Root"
+echo $dir
+cd $dir
