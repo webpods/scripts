@@ -74,8 +74,8 @@ removal_timer(){
 }
 
 log_packets(){
-nohup tcpdump -i eth0 -vvn -s0 -c 10000 -w "/root/erwin.cap" >/dev/null 2>&1 &
-echo "$FLOODED" > /root/erwin.txt
+nohup tcpdump -i eth0 -vvn -s0 -c 10000 -w "/root/rob.cap" >/dev/null 2>&1 &
+echo "$FLOODED" > /root/rob.txt
 }
 
 echo_messages(){
