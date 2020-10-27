@@ -1,5 +1,5 @@
 [Unit]
-Description=Conseev block-flood service
+Description=block-flood service
 After=network.target
 
 [Service]
