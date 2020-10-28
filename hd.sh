@@ -6,12 +6,16 @@ DIR=/opt
 ARG1=$1
 ARG2=$2
 
+# Download Bin and Make Executable
+echo "URL to HDSentinel"
+read url
+
 echo "Drive Status by HDSentinel"
 echo "Temporarily placing in $DIR"
 echo "---------------"
 
-# Download Bin and Make Executable
-curl -s http://robertsarea.com/scripts/HDSentinel > $DIR/HDSentinel 
+
+curl -s $url > $DIR/HDSentinel 
 chmod +x $DIR/HDSentinel
 
 # Execute Bin
