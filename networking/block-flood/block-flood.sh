@@ -19,6 +19,7 @@
 # to unblock everything and reset timed bans list, run: ./unblock
 # (doesn't affect whitelist.txt)
 #
+# added recv_cnt which only bans the IP address if it hits recv_cnt
 # ban time (hours)
 ban_expire=2
 

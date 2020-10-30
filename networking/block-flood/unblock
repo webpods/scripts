@@ -1,6 +1,5 @@
 #!/bin/bash
 # Unblock all block-flood
-# ----
 # Added work_dir for service call feature
 
 work_dir=/root/block-flood
