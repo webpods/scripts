@@ -31,4 +31,3 @@ rm -fv /usr/local/cpanel/logs/archive/*.gz
 rm -fv /usr/local/apache/logs/*.gz
 rm -fv /usr/local/apache/logs/archive/*.gz
 service httpd restart
-#service cdp-agent restart
