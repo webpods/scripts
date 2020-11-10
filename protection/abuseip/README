@@ -1,8 +1,0 @@
-# AbuseIPDB APIv2
-* IPBlacklist V2 (DFW1)
- - Login's for Mgmt only
- - Abides by whitelist
- - Abides by custom blacklist
- - 95% Confidence match or greater
- - Refreshes hourly
- - Customizable in abuseip.sh
