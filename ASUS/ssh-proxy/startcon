@@ -1,0 +1,13 @@
+#!/bin/bash
+IP=<SOMEIP>
+PORT=<SOMEPORT>
+ID=<PATH/TO/KEY>
+NOW=$(date +"%m-%d-%Y @ %T")
+while true;
+do  netstat -ntlp | egrep "8989" | awk -FLISTEN {'print $2'} | awk -F/ {'print $1'} | xargs kill -9;
+#echo "Starting connection $NOW..."
+ssh -D 127.0.0.1:8989 -q -N -f root@$IP -p$PORT -i $id;
+#reset after 1hour
+sleep 1h;
+done
+
