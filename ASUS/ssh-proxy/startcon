@@ -1,6 +1,12 @@
 #!/bin/bash
+# Simple SSH proxy
+# What hostname or IP to connect to
 IP=<SOMEIP>
+
+# What port is SSH on?
 PORT=<SOMEPORT>
+
+# Path to your SSH key (private)
 ID=<PATH/TO/KEY>
 NOW=$(date +"%m-%d-%Y @ %T")
 while true;
