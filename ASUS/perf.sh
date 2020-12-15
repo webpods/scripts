@@ -1,5 +1,5 @@
 #!/bin/bash
-# Used for Max Performance on Laptop
+# Used for Max Performance on Laptop - Basic Overclocking
 echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 echo always > /sys/kernel/mm/transparent_hugepage/enabled
 echo always > /sys/kernel/mm/transparent_hugepage/defrag

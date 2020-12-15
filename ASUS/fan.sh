@@ -1,5 +1,6 @@
 #!/bin/bash
 # Fan full speed or auto, default auto
+# Usefull for overclocking
 full () {
 echo 255 > /sys/devices/platform/asus-nb-wmi/hwmon/hwmon[[:print:]]*/pwm1 
 }
