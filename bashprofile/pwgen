@@ -1,0 +1,2 @@
+pwgen(){ < /dev/urandom tr -dc A-Z-a-z-0-9_!@# | head -c${1:-16};echo;}
+
