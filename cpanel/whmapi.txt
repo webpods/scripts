@@ -1,0 +1,7 @@
+whmapi1 set_tweaksetting key=allowremotedomains value=(0 or 1)
+
+whmapi1 create_user_session user=root service=whostmgrd 
+
+user=(USER);whmapi1 create_user_session user=$user service=cpaneld 
+
+whmapi1 suspend_outgoing_email user=<CPUSER)
