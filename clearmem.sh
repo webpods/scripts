@@ -1,5 +1,6 @@
 #!/bin/sh
 # Clear memory caches
+# Bash Simples - robert@webpods.com
 level=$1
 
 

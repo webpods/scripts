@@ -1,5 +1,7 @@
 #!/bin/bash
-# robert
+# KVM Renicer virt-top and vish
+# robert@webpods.com
+
 while [[ true ]]
 do
         CPUDOM=`virt-top -n 2 --script --stream -o cpu|grep -v -i name|grep -v -i time|grep -v '0.0'|sort -k7 -nr|awk {'print $10'}|head -n1`
