@@ -1,4 +1,5 @@
 #!/bin/bash
+# Code by robert@wepods.com
 domain=$1
 user=$(/scripts/whoowns $1)
 addon=$(grep $domain /var/cpanel/userdata/$user/main|awk {'print $2'}|uniq{'print $3'})
