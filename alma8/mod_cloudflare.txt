@@ -1,1 +1,3 @@
 The mod_cloudflare Apache module, configuration, with cPanel support (Beta)
+* USE *
+Updated conf supplied, uses current IPs
