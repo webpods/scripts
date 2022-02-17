@@ -1,0 +1,16 @@
+#!/bin/bash
+# cyber@webpods.com
+# Usage: cfban <MODE|block|whitelist|challenge|js_challenege> <IP> <NOTE>
+
+USER=<YOUR_EMAIL>
+TOKEN=<YOUR_API_TOEKN>
+
+MODE=$2
+NOTES=$4
+IPS=$3
+
+curl -sSX POST "https://api.cloudflare.com/client/v4/user/firewall/access_rules/rules" \
+-H "X-Auth-Email: $USER" \
+-H "X-Auth-Key: $TOKEN" \
+-H "Content-Type: application/json" \
+--data "{\"mode\":\"$MODE\",\"configuration\":{\"target\":\"$IPS\",\"value\":\"$1\"},\"notes\":\"Webpods - $MODE - $NOTES\"}"

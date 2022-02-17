@@ -1,0 +1,24 @@
+#!/bin/bash
+# cyber@webpods.com
+# Usage: cfunabn <IP>
+# jq required
+
+USER=<YOUR_EMAIL>
+TOKEN=<YOUR_API_TOKEN>
+
+MODE=$2
+IPS=$3
+
+# fetch the rule ID
+JSON=$(curl -sSX GET "https://api.cloudflare.com/client/v4/user/firewall/access_rules/rules?mode=$MODE&configuration_target=$IPS&configuration_value=$1" \
+-H "X-Auth-Email: $USER" \
+-H "X-Auth-Key: $TOKEN" \
+-H "Content-Type: application/json")
+
+ID=$(echo $JSON | jq -r '.result[].id')
+
+# unban IP by deleting the rule
+curl -sSX DELETE "https://api.cloudflare.com/client/v4/user/firewall/access_rules/rules/$ID" \
+-H "X-Auth-Email: $USER" \
+-H "X-Auth-Key: $TOKEN" \
+-H "Content-Type: application/json"
