@@ -1,0 +1,17 @@
+#!/bin/bash
+# cyber@webpods.com
+# Purge CloudFlare cache for a zone
+# Usage: cfpurge <ZONE_ID> (Domain ID)
+
+USER=<YOUR_EMAIL>
+TOKEN=<YOUR_API_TOKEN>
+
+# Your ZONEID can be found under in the Dashboard > Overview section.
+# Future improvements include search for zone id based on zone lists.
+ZONEID=$1
+
+curl -sSX POST "https://api.cloudflare.com/client/v4/zones/$ZONEID/purge_cache" \
+-H "X-Auth-Email: $USER" \
+-H "X-Auth-Key: $TOKEN" \
+-H "Content-Type: application/json" \
+--data '{"purge_everything":true}'
