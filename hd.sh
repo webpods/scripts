@@ -2,7 +2,7 @@
 # Define temp location
 DIR=/opt
 # Parse args for program
-# Example bash <(curl -s http://robertsarea.com/scripts/hd.sh) -r
+# Example bash <(curl -s http://robith.com/scripts/hd.sh) -r
 ARG1=$1
 ARG2=$2
 
