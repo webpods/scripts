@@ -1,7 +1,12 @@
+# Allow/Disallow Remote Domains
 whmapi1 set_tweaksetting key=allowremotedomains value=(0 or 1)
 
+# Replaced with whmlogin for root
 whmapi1 create_user_session user=root service=whostmgrd 
 
+#Create a cPanel user session for login
 user=(USER);whmapi1 create_user_session user=$user service=cpaneld 
 
-whmapi1 suspend_outgoing_email user=<CPUSER)
+# Suspend cPanel users outgoing email
+user=(USER);whmapi1 suspend_outgoing_email user=$user
+
