@@ -13,13 +13,13 @@ if ($choice eq '0') {
 
 elsif ($choice eq '1') {
     print "\n\n-----\n";
-    print "\nFinding (not deleting) large achives that are >50MB in size...\n";
+    print "\nFinding (not deleting) large achives that are >100MB in size...\n";
     do_archives();
 }
 
 elsif ($choice eq '2') {
     print "\n\n-----\n";
-    print "Deleting all php error_log files >5MB in size...\n";
+    print "Deleting all php error_log files >100MB in size...\n";
     do_errorlogs();
 }
 
@@ -45,6 +45,11 @@ elsif ($choice eq '6') {
     print "Deleting all softaculous backups from /home ...\n";
     do_softaculous();
 }
+elsif ($choice eq '7') {
+    print "\n\n-----\n";
+    print "Deleting all cPanel user trash files ...\n";
+    do_cp_trash();
+}
 
 do_summary();
 goto START;
@@ -58,15 +63,16 @@ sub do_options {
     print "============================================================\n\n";
     print "-> What do you want to do?
 
-    [ 1 ] FIND large archives (>50MB)
+    [ 1 ] FIND large archives (>100MB)
     [ 2 ] DELETE all error_log files (>100MB)
     [ 3 ] DELETE all trash email from users [DISABLED]
     [ 4 ] DELETE all webalizer caches (>30 days)
     [ 5 ] FIND all backup archives from /home
     [ 6 ] DELETE all softaculous backup archives from /home
+    [ 7 ] DELETE all cPanel user trash files
     [ 0 ] Exit...
 
-    Your choice (0 to 5): ";
+    Your choice (0 to 7): ";
 
     chomp ($choice=<STDIN>);
 }
@@ -83,7 +89,7 @@ sub do_summary {
 }
 
 sub do_archives {
-    system('find /home -regextype posix-awk -regex "(.*.rar|.*.zip|.*.tar.gz|.*.rar|.*.tar)" -not -path "/home/virtfs/*" -size +50M -exec ls -lh {} \\; | awk \'{print "[" $5 "]" "\\t" $9 }\'');
+    system('find /home -regextype posix-awk -regex "(.*.rar|.*.zip|.*.tar.gz|.*.rar|.*.tar)" -not -path "/home/virtfs/*" -size +100M -exec ls -lh {} \\; | awk \'{print "[" $5 "]" "\\t" $9 }\'');
     print "\nDone.\n";
     print "\n-----\n\n";
 }
@@ -106,6 +112,12 @@ sub do_errorlogs {
 #    print "\nDone.\n";
 #    print "\n-----\n\n";
 #}
+
+sub do_cp_trash {
+     system('find /home/*/.Trash/cur -type f -ctime +30 -delete > /dev/null 2>&1');
+    print "\nDone.\n";
+    print "\n-----\n\n";
+}
 
 sub do_webalizer {
     system('find /home/*/tmp/webalizer -name "dns_cache.db" -ctime +30 -delete');
