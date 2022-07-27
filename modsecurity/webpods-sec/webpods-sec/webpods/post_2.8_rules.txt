@@ -1,0 +1,54 @@
+<FilesMatch "xmlrpc.php">
+    # Block empty User-Agents.
+    # Adapted from OWASP CRS #960009 & #960006
+    # See https://github.com/SpiderLabs/owasp-modsecurity-crs
+    SecRule &REQUEST_HEADERS:User-Agent "@eq 0" \
+         "id:'13009',phase:2,t:none,deny,status:406,\
+         msg:'Request to xmlrpc.php missing a User Agent header'"
+    SecRule REQUEST_HEADERS:User-Agent "^$" \
+         "id:'13006',phase:2,t:none,deny,status:406,\
+         msg:'Empty User Agent header in request to xmlrpc.php'"
+
+    # Block brute force attempts using xmlrpc.php as the vector
+    # T3 Trac 7887 (https://trac.imhtech.net/T3/ticket/7887)
+    # Increment our counter when the xmlrpc API indicates a failure
+    SecRule REQUEST_BODY "wp\.getUsersBlogs" "id:13504,deny,chain,status:406,\
+        phase:4,t:none,t:urlDecode,chain,deny,log,\
+        msg:'xmlrpc.php call failures triggered temporary block'"
+    SecRule RESOURCE:xmlrpc_bf_block "@gt 0"
+
+    SecRule RESPONSE_BODY "faultString" "id:13505,nolog,\
+        phase:4,t:none,t:urlDecode,\
+        setvar:RESOURCE.xmlrpc_bf_counter=+1,\
+        deprecatevar:RESOURCE.xmlrpc_bf_counter=1/600"
+
+    SecRule RESOURCE:xmlrpc_bf_counter "@gt 2" "id:13506,nolog,\
+        deny,status:406,setvar:RESOURCE.xmlrpc_bf_block=1,\
+        expirevar:RESOURCE.xmlrpc_bf_block=1800,\
+        setvar:RESOURCE.xmlrpc_bf_counter=0"
+
+
+    # Mitigate Jetpack 0-day
+    # If this _matches_ skip the this rule and xmlrpc flood rules
+    SecRule REMOTE_ADDR \
+        "@ipMatch 192.0.64.0/18,209.15.0.0/16,66.155.0.0/17,199.27.128.0/21" \
+        "id:13510,log,pass,skip:5"
+    SecRule REQUEST_HEADERS:x-forwarded-for \
+        "^(192\.0\.|209\.15\.|66\.155\.|199\.27\.)" \
+        "id:13511,log,pass,skip:4"
+    SecRule ARGS:for "@rx jetpack" \
+        "id:13512,log,deny,t:none,severity:'4',status:406,\
+        msg:'Request for WordPress XML-RPC not from Jetpack API IP',\
+        tag:'WEB_ATTACK/SHELL ACCESS'"
+</FilesMatch>
+
+#block flood of valid xmlrpc requests
+SecAction phase:1,nolog,pass,initcol:IP=%{REMOTE_ADDR},id:13513
+<LocationMatch "/xmlrpc(\.php)?$">
+SecAction phase:2,nolog,pass,deprecatevar:ip.count_a=1/30,id:13513
+SecRule IP:COUNT_A "@gt 15" \
+    "phase:2,deny,status:406,log,id:13514,\
+    msg:'xmlrpc.php flood detected'"
+SecRule REQUEST_METHOD "POST" "phase:4,pass,nolog,setvar:ip.count_a=+1,id:13515"
+</LocationMatch>
+

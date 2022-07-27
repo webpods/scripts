@@ -1,0 +1,42 @@
+<FilesMatch "xmlrpc.php">
+    # Block empty User-Agents.
+    # Adapted from OWASP CRS #960009 & #960006
+    # See https://github.com/SpiderLabs/owasp-modsecurity-crs
+    SecRule &REQUEST_HEADERS:User-Agent "@eq 0" \
+         "id:'13009',phase:2,t:none,deny,status:406,\
+         msg:'Request to xmlrpc.php missing a User Agent header'"
+    SecRule REQUEST_HEADERS:User-Agent "^$" \
+         "id:'13006',phase:2,t:none,deny,status:406,\
+         msg:'Empty User Agent header in request to xmlrpc.php'"
+
+
+    # Block brute force attempts using xmlrpc.php as the vector
+    # T3 Trac 7887 (https://trac.imhtech.net/T3/ticket/7887)
+    # Increment our counter when the xmlrpc API indicates a failure
+    SecRule REQUEST_BODY "wp\.getUsersBlogs" "id:13504,deny,chain,status:406,\
+        phase:4,t:none,t:urlDecode,chain,deny,log,\
+        msg:'xmlrpc.php call failures triggered temporary block'"
+    SecRule RESOURCE:xmlrpc_bf_block "@gt 0"
+
+    SecRule RESPONSE_BODY "faultString" "id:13505,nolog,\
+        phase:4,t:none,t:urlDecode,\
+        setvar:RESOURCE.xmlrpc_bf_counter=+1,\
+        deprecatevar:RESOURCE.xmlrpc_bf_counter=1/600"
+
+    SecRule RESOURCE:xmlrpc_bf_counter "@gt 2" "id:13506,nolog,\
+        deny,status:406,setvar:RESOURCE.xmlrpc_bf_block=1,\
+        expirevar:RESOURCE.xmlrpc_bf_block=1800,\
+        setvar:RESOURCE.xmlrpc_bf_counter=0"
+
+
+    # Mitigate Jetpack 0-day
+    # Horrible regex because we can't ipMatch
+    # If this _matches_ skip the next rule
+    SecRule REMOTE_ADDR "^(:?216\.151\.(:?2(:?09|10))|216\.152\.133|76\.74\.2(:?48|5[45])|207\.198\.101|209\.15\.21|66\.135\.(:?48|58)|66\.155\.8|66\.155\.38|69\.174\.248|192\.0\.(:?6[456789]|7[01])|66\.155\.(:?[89]|1[01])|192\.0\.(:?8[0-9]|9[1-9]|1[01][0-9]*))\." \
+        "id:13510,pass,skip:1"
+    SecRule ARGS:for "@rx jetpack" \
+        "id:13511,log,deny,t:none,\
+        msg:'Request for WordPress XML-RPC not from Jetpack API IP',\
+        tag:'WEB_ATTACK/SHELL ACCESS',severity:'4',\
+        status:406"
+</FilesMatch>
