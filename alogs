@@ -482,7 +482,7 @@ else # single user command
 fi
 echo "To continue tailing the logs in real(ish) time, run:   $command"
 echo
-if [ "$commandline" != "hl" ]
+if [ "$commandline" != "alogs" ]
 then
     echo "You just ran: ./$commandline"
     echo
