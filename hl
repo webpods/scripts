@@ -1,4 +1,5 @@
 #!/bin/bash
+# cPanel
 # Apache High Load Count
 # Robert
 
@@ -441,12 +442,8 @@ do
     fi
     rangelive="" # set to blank before entering next bit
     rangecountrycode=$(echo "$rangewhois" | grep -m 1 "Country"| awk -F: '{print $2}') # only take first country entry on grep
-    if [ "$rangebare" = 195.188.223.0 ] || [ "$rangebare" = 81.143.193.0 ] # office IP detection
-    then
-        rangeowner="SUB-6-LIMITED - OFFICE"
-    else
-        rangeowner=$(echo "$rangewhois" | grep -m 1 "ASNum") # Grab network owner data if available
-    fi
+    rangeowner=$(echo "$rangewhois" | grep -m 1 "ASNum") # Grab network owner data if available
+    
     for liverangeitem in $liveranges
     do
         if [ "$liverangeitem" = "$rangebare" ] #if the IP range is in the list of live connections
