@@ -132,7 +132,7 @@ echo
 echo
 
 today=$(date +%d/%b/%Y)
-commandline="hl"
+commandline="alogs"
 tzonename=$(date +%Z)
 tzoneoffset=$(date +%z)
 now=$(date +%H%M)

@@ -132,7 +132,7 @@ echo
 echo
 
 today=$(date +%d/%b/%Y)
-commandline="hl"
+commandline="dlogs"
 tzonename=$(date +%Z)
 tzoneoffset=$(date +%z)
 now=$(date +%H%M)
@@ -482,7 +482,7 @@ else # single user command
 fi
 echo "To continue tailing the logs in real(ish) time, run:   $command"
 echo
-if [ "$commandline" != "alogs" ]
+if [ "$commandline" != "dlogs" ]
 then
     echo "You just ran: ./$commandline"
     echo
