@@ -121,7 +121,7 @@ sub do_errorlogs {
 #}
 
 sub do_cp_trash {
-     system('find /home/*/.trash/ -type f -delete');
+    system('find /home/*/.trash/ -type f -print -delete');
     print "\nDone.\n";
     print "\n-----\n\n";
 }
