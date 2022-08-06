@@ -85,13 +85,13 @@ sub do_options {
 }
 
 sub do_summary {
-    $after_pct = `df -h /home | awk '{print \$5}' | sed '1d'`;
-    $after_amount = `df -h /home | awk '{print \$4}' | sed '1d'`;
+    $after_pct = `df -h / | awk '{print \$5}' | sed '1d'`;
+    $after_amount = `df -h / | awk '{print \$4}' | sed '1d'`;
 
     chomp($after_pct, $after_amount);
 
     print "\n\n============================================================\n";
-    print "\t /home has $after_pct free ($after_amount) after the clear!\n";
+    print "\t / has $after_pct free ($after_amount) after the clear!\n";
     print "============================================================\n\n";
 }
 
@@ -121,13 +121,13 @@ sub do_errorlogs {
 #}
 
 sub do_cp_trash {
-     system('find /home/*/.trash/ -type f -delete > /dev/null 2>&1');
+     system('find /home/*/.trash/ -type f -delete');
     print "\nDone.\n";
     print "\n-----\n\n";
 }
 
 sub do_varlog {
-     system('du -chs /var/log');
+     system('du -chs /var/log/*');
     print "\nDone.\n";
     print "\n-----\n\n";
 }
