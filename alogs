@@ -14,9 +14,16 @@
 
 IFS=$'\n'
 set -u
-version="1.1"
+
+version="1.2"
 
 # set up functions for binary conversion of IPs and subnet masks
+function maskip()
+{
+    ip=""
+    ip=$(echo "${1}" | awk '{print substr($0,0,'"$2"')}')
+    echo "${ip:0}"
+}
 
 function convip()
 {
@@ -28,12 +35,6 @@ function convip()
     echo "${ip:0}"
 }
  
-function maskip()
-{
-    ip=""
-    ip=$(echo "${1}" | awk '{print substr($0,0,'"$2"')}')
-    echo "${ip:0}"
-}
 
 # functions to sanity check times dates usernames etc
 
@@ -476,11 +477,11 @@ echo
 # generate command for further tailing
 if [ "$username" = all ]
 then # wildcard command
-    command='tail -f /home/*/access-logs/* | grep -E "wp-admin|wp-login|POST /"'
+    command='tail -f /home/*/access-logs/* | grep -E "wp-admin|wp-login|POST|xmlrpc /"'
 else # single user command
-    command='tail -f /home/'$username'/access-logs/* | grep -E "wp-admin|wp-login|POST /"'
+    command='tail -f /home/'$username'/access-logs/* | grep -E "wp-admin|wp-login|POST|xmlrpc.php /"'
 fi
-echo "To continue tailing the logs in real(ish) time, run:   $command"
+echo "To continue tailing the logs for common attacks, run:   $command"
 echo
 if [ "$commandline" != "alogs" ]
 then
