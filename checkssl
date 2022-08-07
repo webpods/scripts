@@ -1,12 +1,19 @@
 #!/bin/bash
 # Robert Taylor
-# github.com/webpods/scripts
+# rgithub.com/webpods/scripts/
+# SSL Checker
 echo "Usage:"
 echo "sslcheck domain.tld server.tld.com"
 echo "---------"
 echo ""
 dom=$1
-server=$2
+
+if [ "$2" == "" ]; then
+    server=$1
+else
+        server=$2
+fi
+
 #dom2=www.$1
 let CertificateExpirationWarningTrigger=60*60*24
 echo "SSL Information for $dom:"
@@ -15,3 +22,4 @@ echo|openssl s_client -servername $dom -connect $server:443 2>/dev/null|openssl 
 echo " --------------------------- "
 echo " "
 #echo "Checking with" `openssl version|awk {'print $1,$2'};`
+
