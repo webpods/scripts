@@ -1,6 +1,6 @@
 #!/bin/bash
 # cPanel
-# Apache High Load Count
+# Apache Logs checker
 # Robert
 # Command line usage: 
 # alogs -s <HHMM> : Start time 
@@ -12,7 +12,7 @@
 # alogs  -d : how many days ago (1 for yesterday, 2 for day before etc) 
 # alogs  -h : this help
 
-IFS=$'\n'
+#IFS=$'\n'
 set -u
 
 version="1.2"
