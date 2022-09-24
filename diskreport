@@ -56,6 +56,11 @@ elsif ($choice eq '8') {
     print "Calculating usage in /var/log ...\n";
     do_varlog();
 }
+elsif ($choice eq '9') { 
+   print "\n\n------\n";
+   print "Clearing Systemd journal ....\n";
+   do_clearjournal();
+}
 
 do_summary();
 goto START;
@@ -76,10 +81,11 @@ sub do_options {
     [ 5 ] FIND all backup archives in /home
     [ 6 ] DELETE all softaculous backup archives from /home
     [ 7 ] DELETE all cPanel user trash files
-    [ 8 ] Show usage in /var/log
+    [ 8 ] SHOW usage in /var/log
+    [ 9 ] CLEAR Systemd Journal (only leave past hour)
     [ 0 ] Exit...
 
-    Your choice (0 to 7): ";
+    Your choice (0 to 9): ";
 
     chomp ($choice=<STDIN>);
 }
@@ -119,6 +125,12 @@ sub do_errorlogs {
 #    print "\nDone.\n";
 #    print "\n-----\n\n";
 #}
+
+sub do_clearjournal {
+    system('journalctl --vacuum-time=1h');
+    print "\nJournal Cleared.\n";
+    print "\n-----\n\n";
+}
 
 sub do_cp_trash {
     system('find /home/*/.trash/ -type f -print -delete');
