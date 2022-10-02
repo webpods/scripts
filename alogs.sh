@@ -1,7 +1,9 @@
 #!/bin/bash
-# cPanel
+# github.com/webpods/scripts/
 # Apache Logs checker
-# Robert
+# by Webpods, LCC
+# cyber@webpods.com
+#####################
 # Command line usage: 
 # alogs -s <HHMM> : Start time 
 # alogs -e <HHMM> : End time 
@@ -11,7 +13,8 @@
 # alogs  -v : verbose mode (multiply the number of results by 5) 
 # alogs  -d : how many days ago (1 for yesterday, 2 for day before etc) 
 # alogs  -h : this help
-version="1.2.001"
+
+version="1.3.1"
 
 IFS=$'\n'
 set -u

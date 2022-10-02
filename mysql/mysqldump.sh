@@ -1,5 +1,9 @@
 #!/bin/bash
 #mySQL Dumper .01
+# github.com/webpods/scripts/
+# Webpods, LCC
+# cyber@webpods.com
+
 tstamp=`date +%s`
 
 	function mdump {
