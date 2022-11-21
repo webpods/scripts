@@ -36,7 +36,6 @@ sub do_start {
 if ($choice eq '0') {
 	exit 0;
 }
-
 elsif ($choice eq '1') {
     print qq~ Enter cPanel username: ~;
     chomp ($user=<STDIN>);
@@ -44,6 +43,20 @@ elsif ($choice eq '1') {
 }
 elsif ($choice eq '2') {
     print qq~ Creating Root Session ~;
+    whmroot();
+}
+elsif ($choice eq '3') {
+    phpvhost();
+}
+elsif ($choice eq '4') {
+    version();
+}
+elsif ($choice eq '5') {
+    print qq~ Tweak settings:
+    Tweak setting to adjust (ie allowremotedomains):~;
+    chomp ($setting=<STDIN>);
+    print qq~ Value 1 or 0: ~;
+    chomp ($value=<STDIN>);
     whmroot();
 }
 
@@ -63,9 +76,15 @@ sub whmroot {
 system("/usr/sbin/whmapi1 create_user_session user=root service=whostmgrd locale=en|grep -Po '(?<=(url: )).*'")
 }
 
+sub version {
+system("/usr/sbin/whmapi1 version")
+	}
+sub version {
+system("/usr/sbin/whmapi1 set_tweaksetting key=$setting value=$value")
+	}
+
+
 #Vhost Type stuff
 sub phpvhost {
-
 system("/usr/sbin/whmapi1 php_get_vhost_versions")
-
 	}
