@@ -59,6 +59,9 @@ elsif ($choice eq '5') {
     chomp ($value=<STDIN>);
     whmroot();
 }
+elsif ($choice eq '6') {
+    update();
+}
 
 
 
@@ -82,7 +85,9 @@ system("/usr/sbin/whmapi1 version")
 sub version {
 system("/usr/sbin/whmapi1 set_tweaksetting key=$setting value=$value")
 	}
-
+sub update {
+system("/usr/sbin/whmapi1 start_cpanel_update")
+	}
 
 #Vhost Type stuff
 sub phpvhost {
