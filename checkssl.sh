@@ -1,5 +1,6 @@
 #!/bin/bash
 # Robert Taylor
+# Webpods, LLC
 # github.com/webpods/scripts/
 # SSL Checker
 echo "Usage:"

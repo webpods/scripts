@@ -1,7 +1,7 @@
 #!/bin/bash
 # github.com/webpods/scripts/
 # Apache Logs checker
-# by Webpods, LCC
+# by Webpods, LLC (Robert Taylor)
 # cyber@webpods.com
 #####################
 # Command line usage: 

@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 # Disk Reporter
-# Robert Taylor
+# Webpods, LLC - Robert Taylor
 # github.com/webpods/scripts/
 
 START:
