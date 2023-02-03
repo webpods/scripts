@@ -1,0 +1,5 @@
+alias mysql='mysql --defaults-extra-file=/usr/local/directadmin/conf/my.cnf'
+alias mysqlcheck='mysqlcheck --defaults-extra-file=/usr/local/directadmin/conf/my.cnf'
+alias mysqldump='mysqldump --defaults-extra-file=/usr/local/directadmin/conf/my.cnf'
+alias mysqladmin='mysqladmin --defaults-extra-file=/usr/local/directadmin/conf/my.cnf'
+alias mysqlshow='mysqlshow --defaults-extra-file=/usr/local/directadmin/conf/my.cnf'
