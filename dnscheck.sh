@@ -1,5 +1,5 @@
 #!/bin/bash
-# DNS Checker v1
+# DNS Checker 1.1
 # Will need to functionize it
 
 if [ "$1" == "" ]; then
@@ -19,5 +19,5 @@ echo " ---------------------------"
 #echo "DNS Checking against Cloudflare, Google, Quad9, OpenDNS"
 echo ""
 
-for i in $ns; do echo "Checking $domain against $i"; echo "---------------------------"; echo ""; echo "Name Servers for $domain"; echo ""; dig @$i NS $domain +short|echo "DNSSEC Check:"; echo "";whois --no-recursion $1|grep "DNSSEC"|tr -d ' ' ; echo "--";echo "A record for $domain";echo ""; dig @$i A $domain +short;echo "---";echo "MX records for $domain"; echo ""; dig @$i MX $domain +short; echo "---"; echo "TXT records for $domain"; dig @$i TXT $domain +short;dig @$ns TXT default._domainkey.$1 +short; dig @$ns TXT _dmarc.$1 +short;echo "---------------------------"; echo ""; done
+for i in $ns; do echo "Checking $domain against $i"; echo "---------------------------"; echo ""; echo "Name Servers for $domain"; echo ""; dig @$i NS $domain +short|echo "DNSSEC Check:"; echo "";whois --no-recursion $1|grep "DNSSEC"|tr -d ' ' ;echo "--";echo "CAA records";echo ""; dig @$ns CAA $domain +short;echo "--";echo "A record for $domain";echo ""; dig @$i A $domain +short;echo "---";echo "MX records for $domain"; echo ""; dig @$i MX $domain +short; echo "---"; echo "TXT records for $domain"; dig @$i TXT $domain +short;dig @$ns TXT default._domainkey.$1 +short; dig @$ns TXT _dmarc.$1 +short;echo "---------------------------"; echo ""; done
 
