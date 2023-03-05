@@ -70,7 +70,7 @@ sub do_options {
     # BEGIN CHOICE SELECTION
     print "\n";
     print "============================================================\n";
-    print "DISK CLEANUP SCRIPT \n";
+    print "DISK CLEAN BY WEBPODS,LLC \n";
     print "============================================================\n\n";
     print "-> Choose carefully?
 
