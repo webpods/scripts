@@ -1,0 +1,18 @@
+# Backups / WHM
+whmapi1 backup_get_transport_status <- Check Off Site Backup
+whmapi1 backup_set_list <- Check Backup list (all users)
+whmapi1 backup_date_list <- Backup Dates
+whmapi1 backup_config_get <- Get Backup config
+
+whmapi1 backup_config_set config=value <- Set Backup config value
+# whmapi1 backup_config_get|grep keeplocal
+    keeplocal: 0
+# whmapi1 backup_config_set keeplocal=1
+--- 
+metadata: 
+  command: backup_config_set
+  reason: OK
+  result: 1
+  version: 1
+# whmapi1 backup_config_get|grep keeplocal
+    keeplocal: 1
