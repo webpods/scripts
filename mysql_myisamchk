@@ -1,1 +1,0 @@
-db=<userdb>;mysql -o $db -e 'show table status where Engine="MyISAM" \G;'|grep Name|awk {'print $2'}
