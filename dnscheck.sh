@@ -1,17 +1,23 @@
 #!/bin/bash
-# DNS Checker 1.3
+# DNS Checker 1.5
+# UsageL ./dnscheck domain.com nameserver
+# Ex: ./dnscheck google.com 1.1.1.1
 # Will need to functionize it
 
 if [ "$1" == "" ]; then
-   echo "Usage: ./dnscheck domain.com"
+   echo "Usage: ./dnscheck domain.com 8.8.8.8 (optional)"
    echo ""
    exit 1
 else
 	domain=$1
 fi
 
-ns=('1.1.1.1')
-#ns=('1.1.1.1 8.8.8.8 9.9.9.9 208.67.220.220')
+if [ "$2" == "" ]; then
+   ns=('1.1.1.1')
+else
+	ns=($2)
+fi
+
 echo "WHOIS Nameservers for $domain"
 echo ""
 whois --no-recursion $domain|grep -i 'name server'|head -n4|awk {'print $3'}
