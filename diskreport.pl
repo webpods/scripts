@@ -78,10 +78,10 @@ sub do_options {
     [ 1 ] FIND large archives in /home (>100MB)
     [ 2 ] DELETE all error_log files in /home (>100MB)
     [ 3 ] DELETE all trash email from users [DISABLED]
-    [ 4 ] DELETE all webalizer caches (>30 days)
+    [ 4 ] DELETE all webalizer caches (>30 days) (!!)
     [ 5 ] FIND all backup archives in /home
-    [ 6 ] DELETE all softaculous backup archives from /home
-    [ 7 ] DELETE all cPanel user trash files
+    [ 6 ] DELETE all softaculous backup archives from /home (!!)
+    [ 7 ] DELETE all cPanel user trash files (!!)
     [ 8 ] SHOW usage in /var/log
     [ 9 ] CLEAR Systemd Journal (only leave past hour)
     [ 0 ] Exit...
