@@ -2,6 +2,7 @@
 # Disk Reporter
 # Webpods, LLC - (Robert Taylor)
 # cyber@webpods.com
+# https://webpods.com
 # github.com/webpods/scripts/
 
 START:
@@ -62,6 +63,11 @@ elsif ($choice eq '9') {
    print "Clearing Systemd journal ....\n";
    do_clearjournal();
 }
+elsif ($choice eq '10') {
+    print "\n\n-----\n";
+    print "Finding all debug.out files in /home ...\n";
+    do_debugged();
+}
 
 do_summary();
 goto START;
@@ -84,9 +90,10 @@ sub do_options {
     [ 7 ] DELETE all cPanel user trash files (!!)
     [ 8 ] SHOW usage in /var/log
     [ 9 ] CLEAR Systemd Journal (only leave past hour)
+    [ 10 ] FIND all WordPress debug.out files
     [ 0 ] Exit...
 
-    Your choice (0 to 9): ";
+    Your choice (0 to 10): ";
 
     chomp ($choice=<STDIN>);
 }
@@ -110,6 +117,11 @@ sub do_archives {
 
 sub do_errorlogs {
     system('find /home -type f -name error_log -not -path "/home/virtfs/*" -size +100M -delete');
+    print "\nDone.\n";
+    print "\n-----\n\n";
+}
+sub do_debugged {
+    system('find /home -type f -name debug.out -not -path "/home/virtfs/*" -size +100M');
     print "\nDone.\n";
     print "\n-----\n\n";
 }
