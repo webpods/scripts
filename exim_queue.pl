@@ -1,6 +1,6 @@
 #!/usr/bin/perl
-# exim_queue_report.pl - Generates report of current exim queue in .. #
-#                        a cpanel environment ....................... #
+# exim_queue.pl - Generates report of current exim queue in .. #
+#a cpanel environment ....................... #
 
 use File::Find;
 use File::Spec;
@@ -228,4 +228,3 @@ sub wanted {
 }
 print "\n\n============================================================\n\n";
 # -------------------------- END -------------------------- #
-
