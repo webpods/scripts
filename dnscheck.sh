@@ -1,7 +1,7 @@
 #!/bin/bash
-# DNS Checker 1.5
+# DNS Checker 1.4
 # UsageL ./dnscheck domain.com nameserver
-# Ex: ./dnscheck google.com 1.1.1.2
+# Ex: ./dnscheck google.com 1.1.1.1
 # Will need to functionize it
 
 if [ "$1" == "" ]; then
@@ -24,4 +24,4 @@ whois --no-recursion $domain|grep -i 'name server'|head -n4|awk {'print $3'}
 echo " ---------------------------"
 echo ""
 
-for i in $ns;do echo "Checking $domain against $i";echo "---------------------------";echo "";echo "Name Servers for $domain";echo "---";dig @$i NS $domain +short;echo "---";echo "DNSSEC Check:";echo "";whois --no-recursion $1|grep "DNSSEC"|tr -d ' ' ;echo "Analyzer: https://dnssec-analyzer.verisignlabs.com/$domain";echo "---";echo "CAA records";echo "";dig @$ns CAA $domain +short;echo "---";echo "A record for $domain";echo "";dig @$i A $domain +short;echo "---";echo "MX records for $domain";echo "";dig @$i MX $domain +short;echo "---";echo "MX IPs";echo "---";dig @$ns MX $1 +short|awk {'print $2'}|xargs dig A +short;dig @$ns MX $1 +short|awk {'print $2'}|xargs dig AAAA +short;echo "---";echo "TXT records for $domain";echo "";dig @$i TXT $domain +short;dig @$ns TXT default._domainkey.$1 +short;dig @$ns TXT google._domainkey.$1 +short;dig @$ns TXT _dmarc.$1 +short;echo "---------------------------";echo "";done
+for i in $ns;do echo "Checking $domain against $i";echo "---------------------------";echo "";echo "Name Servers for $domain";echo "---";dig @$i NS $domain +short;echo "---";echo "DNSSEC Check:";echo "";whois --no-recursion $1|grep "DNSSEC"|tr -d ' ' ;echo "Analyzer: https://dnssec-analyzer.verisignlabs.com/$domain";echo "---";echo "CAA records";echo "";dig @$ns CAA $domain +short;echo "---";echo "A record for $domain";echo "";dig @$i A $domain +short;echo "---";echo "MX records for $domain";echo "";dig @$i MX $domain +short;echo "---";echo "MX IPs";echo "---";dig @$ns MX $1 +short|awk {'print $2'}|xargs dig A +short;dig @$ns MX $1 +short|awk {'print $2'}|xargs dig AAAA +short;echo "---";echo "TXT records for $domain";echo "";dig @$i TXT $domain +short;dig @$ns TXT default._domainkey.$1 +short; dig @$ns TXT x._domainkey.$1 +short;echo "--";echo "Google DKIM";echo "--";dig @$ns TXT google._domainkey.$1 +short;echo "--";echo "DMARC";echo "---";dig @$ns TXT _dmarc.$1 +short;echo "---------------------------";echo "";done
