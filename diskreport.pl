@@ -130,9 +130,9 @@ sub do_debugged {
 #    system('find /home/*/mail/.Trash/cur -type f -ctime +30 -delete > /dev/null 2>&1');
 #    system('find /home/*/mail/.Trash/new -type f -ctime +30 -delete > /dev/null 2>&1');
 #    system('find /home/*/mail/*/*/.Trash/cur -type f -ctime +30 -delete > /dev/null 2>&1');
-#    system('find /home/*/mail/*/*/.Trash/new -type f -ctime +30 -delete > /dev/null 2>&1');
-#    system('find /home/*/mail/.Deleted*/cur -type f -ctime +30 -delete > /dev/null 2>&1');
-#    system('find /home/*/mail/.Deleted*/new -type f -ctime +30 -delete > /dev/null 2>&1');
+#   system('find /home/*/mail/*/*/.Trash/new -type f -ctime +30 -delete > /dev/null 2>&1');
+#   system('find /home/*/mail/.Deleted*/cur -type f -ctime +30 -delete > /dev/null 2>&1');
+#   system('find /home/*/mail/.Deleted*/new -type f -ctime +30 -delete > /dev/null 2>&1');
 #    system('find /home/*/mail/*/*/.Deleted*/cur -type f -ctime +30 -delete > /dev/null 2>&1');
 #    system('find /home/*/mail/*/*/.Deleted*/new -type f -ctime +30 -delete > /dev/null 2>&1');
 #    print "\nDone.\n";
@@ -152,7 +152,7 @@ sub do_cp_trash {
 }
 
 sub do_varlog {
-     system('du -chs /var/log/*');
+    system('du -chs /var/log/*');
     print "\nDone.\n";
     print "\n-----\n\n";
 }
