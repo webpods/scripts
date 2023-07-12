@@ -83,7 +83,7 @@ sub do_options {
 
     [ 1 ] FIND large archives in /home (>100MB)
     [ 2 ] DELETE all error_log files in /home (>100MB)
-    [ 3 ] DELETE all trash email from users [DISABLED]
+    [ 3 ] DELETE all trash email from users [Older than 30 days ONLY] (!!)
     [ 4 ] DELETE all webalizer caches (>30 days) (!!)
     [ 5 ] FIND all backup archives in /home
     [ 6 ] DELETE all softaculous backup archives from /home (!!)
@@ -126,18 +126,18 @@ sub do_debugged {
     print "\n-----\n\n";
 }
 
-#sub do_trash {
-#    system('find /home/*/mail/.Trash/cur -type f -ctime +30 -delete > /dev/null 2>&1');
-#    system('find /home/*/mail/.Trash/new -type f -ctime +30 -delete > /dev/null 2>&1');
-#    system('find /home/*/mail/*/*/.Trash/cur -type f -ctime +30 -delete > /dev/null 2>&1');
-#   system('find /home/*/mail/*/*/.Trash/new -type f -ctime +30 -delete > /dev/null 2>&1');
-#   system('find /home/*/mail/.Deleted*/cur -type f -ctime +30 -delete > /dev/null 2>&1');
-#   system('find /home/*/mail/.Deleted*/new -type f -ctime +30 -delete > /dev/null 2>&1');
-#    system('find /home/*/mail/*/*/.Deleted*/cur -type f -ctime +30 -delete > /dev/null 2>&1');
-#    system('find /home/*/mail/*/*/.Deleted*/new -type f -ctime +30 -delete > /dev/null 2>&1');
-#    print "\nDone.\n";
-#    print "\n-----\n\n";
-#}
+sub do_trash {
+    system('find /home/*/mail/.Trash/cur -type f -ctime +30 -delete > /dev/null 2>&1');
+    system('find /home/*/mail/.Trash/new -type f -ctime +30 -delete > /dev/null 2>&1');
+    system('find /home/*/mail/*/*/.Trash/cur -type f -ctime +30 -delete > /dev/null 2>&1');
+    system('find /home/*/mail/*/*/.Trash/new -type f -ctime +30 -delete > /dev/null 2>&1');
+    system('find /home/*/mail/.Deleted*/cur -type f -ctime +30 -delete > /dev/null 2>&1');
+    system('find /home/*/mail/.Deleted*/new -type f -ctime +30 -delete > /dev/null 2>&1');
+    system('find /home/*/mail/*/*/.Deleted*/cur -type f -ctime +30 -delete > /dev/null 2>&1');
+    system('find /home/*/mail/*/*/.Deleted*/new -type f -ctime +30 -delete > /dev/null 2>&1');
+    print "\nDone.\n";
+    print "\n-----\n\n";
+}
 
 sub do_clearjournal {
     system('journalctl --vacuum-time=1h');
