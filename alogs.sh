@@ -353,7 +353,7 @@ echo -n "Progress ."
 
 if [ "$username" = all ]
 then # start wildcard search
-    for dirname in /usr/local/apache/logs/domlogs/*/ # loop round all access logs
+    for dirname in /home/*/access-logs # loop round all access logs
     do
         echo -n "."
         rawdata+=$(grep -H "$today" "$dirname"/* 2>/dev/null | grep "$grepfilter" | awk -F: '{if(($3$4)+0 >= '$startpoint' && ($3$4)+0 <= '$endpoint') print $0}')
