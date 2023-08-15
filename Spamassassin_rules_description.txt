@@ -1,0 +1,1055 @@
+     1	                   AC_BR_BONANZA  Too many newlines in a row... spammy template
+     2	                        ACCESSDB  Message would have been caught by accessdb
+     3	              ACCT_PHISHING_MANY  Phishing for account information
+     4	                  AC_DIV_BONANZA  Too many divs in a row... spammy template
+     5	               AC_FROM_MANY_DOTS  Multiple periods in From user name
+     6	           AC_HTML_NONSENSE_TAGS  Many consecutive multi-letter HTML tags, likely nonsense/spam
+     7	                  AC_POST_EXTRAS  Suspicious URL
+     8	        AC_SPAMMY_URI_PATTERNS10  link combos match highly spammy template
+     9	        AC_SPAMMY_URI_PATTERNS11  link combos match highly spammy template
+    10	        AC_SPAMMY_URI_PATTERNS12  link combos match highly spammy template
+    11	         AC_SPAMMY_URI_PATTERNS1  link combos match highly spammy template
+    12	         AC_SPAMMY_URI_PATTERNS2  link combos match highly spammy template
+    13	         AC_SPAMMY_URI_PATTERNS3  link combos match highly spammy template
+    14	         AC_SPAMMY_URI_PATTERNS4  link combos match highly spammy template
+    15	         AC_SPAMMY_URI_PATTERNS8  link combos match highly spammy template
+    16	         AC_SPAMMY_URI_PATTERNS9  link combos match highly spammy template
+    17	                    ACT_NOW_CAPS  Talks about 'acting now' with capitals
+    18	                          ADMAIL  "admail" and variants
+    19	                     ADMITS_SPAM  Admits this is an ad
+    20	                        AD_PREFS  Advertising preferences
+    21	          ADVANCE_FEE_2_NEW_FORM  Advance Fee fraud and a form
+    22	       ADVANCE_FEE_2_NEW_FRM_MNY  Advance Fee fraud form and lots of money
+    23	         ADVANCE_FEE_2_NEW_MONEY  Advance Fee fraud and lots of money
+    24	               ADVANCE_FEE_3_NEW  Appears to be advance fee fraud (Nigerian 419)
+    25	          ADVANCE_FEE_3_NEW_FORM  Advance Fee fraud and a form
+    26	       ADVANCE_FEE_3_NEW_FRM_MNY  Advance Fee fraud form and lots of money
+    27	         ADVANCE_FEE_3_NEW_MONEY  Advance Fee fraud and lots of money
+    28	               ADVANCE_FEE_4_NEW  Appears to be advance fee fraud (Nigerian 419)
+    29	          ADVANCE_FEE_4_NEW_FORM  Advance Fee fraud and a form
+    30	       ADVANCE_FEE_4_NEW_FRM_MNY  Advance Fee fraud form and lots of money
+    31	         ADVANCE_FEE_4_NEW_MONEY  Advance Fee fraud and lots of money
+    32	               ADVANCE_FEE_5_NEW  Appears to be advance fee fraud (Nigerian 419)
+    33	          ADVANCE_FEE_5_NEW_FORM  Advance Fee fraud and a form
+    34	       ADVANCE_FEE_5_NEW_FRM_MNY  Advance Fee fraud form and lots of money
+    35	         ADVANCE_FEE_5_NEW_MONEY  Advance Fee fraud and lots of money
+    36	        ALIBABA_IMG_NOT_RCVD_ALI  Alibaba hosted image but message not from Alibaba
+    37	                     ALL_TRUSTED  Passed through trusted hosts only via SMTP
+    38	        AMAZON_IMG_NOT_RCVD_AMZN  Amazon hosted image but message not from Amazon
+    39	              ANY_BOUNCE_MESSAGE  Message is some kind of bounce message
+    40	                 APOSTROPHE_FROM  From address contains an apostrophe
+    41	                             AWL  Adjusted score from AWL reputation of From: address
+    42	    AXB_XMAILER_MIMEOLE_OL_024C2  Yet another X header trait
+    43	    AXB_XMAILER_MIMEOLE_OL_1ECD5  Yet another X header trait##} AXB_XMAILER_MIMEOLE_OL_1ECD5
+    44	                      BAD_CREDIT  Eliminate Bad Credit
+    45	                  BAD_ENC_HEADER  Message has bad MIME encoding in the header
+    46	                       BANG_GUAR  Something is emphatically guaranteed
+    47	                      BANG_OPRAH  Talks about Oprah with an exclamation!
+    48	                    BANKING_LAWS  Talks about banking laws
+    49	            BASE64_LENGTH_79_INF  base64 encoded email part uses line length greater than 79 characters
+    50	            BASE64_LENGTH_79_INF  base64 encoded email part uses line length of 78 or 79 characters
+    51	                        BAYES_00  Bayes spam probability is 0 to 1%
+    52	                        BAYES_05  Bayes spam probability is 1 to 5%
+    53	                        BAYES_20  Bayes spam probability is 5 to 20%
+    54	                        BAYES_40  Bayes spam probability is 20 to 40%
+    55	                        BAYES_50  Bayes spam probability is 40 to 60%
+    56	                        BAYES_60  Bayes spam probability is 60 to 80%
+    57	                        BAYES_80  Bayes spam probability is 80 to 95%
+    58	                        BAYES_95  Bayes spam probability is 95 to 99%
+    59	                       BAYES_999  Bayes spam probability is 99.9 to 100%
+    60	                        BAYES_99  Bayes spam probability is 99 to 100%
+    61	             BIGNUM_EMAILS_FREEM  Lots of email addresses/leads, free email account
+    62	              BIGNUM_EMAILS_MANY  Lots of email addresses/leads, over and over
+    63	                 BILLION_DOLLARS  Talks about lots of money
+    64	                    BITCOIN_BOMB  BitCoin + bomb
+    65	                BITCOIN_DEADLINE  BitCoin with a deadline
+    66	               BITCOIN_EXTORT_01  Extortion spam, pay via BitCoin
+    67	               BITCOIN_EXTORT_02  Extortion spam, pay via BitCoin
+    68	                   BITCOIN_IMGUR  Bitcoin + hosted image
+    69	               BITCOIN_MALF_HTML  Bitcoin + malformed HTML
+    70	                 BITCOIN_MALWARE  BitCoin + malware bragging
+    71	               BITCOIN_OBFU_SUBJ  Bitcoin + obfuscated subject
+    72	                    BITCOIN_ONAN  BitCoin + [censored]
+    73	                  BITCOIN_PAY_ME  Pay me via BitCoin
+    74	                 BITCOIN_SPAM_01  BitCoin spam pattern 01
+    75	                 BITCOIN_SPAM_02  BitCoin spam pattern 02
+    76	                 BITCOIN_SPAM_03  BitCoin spam pattern 03
+    77	                 BITCOIN_SPAM_04  BitCoin spam pattern 04
+    78	                 BITCOIN_SPAM_05  BitCoin spam pattern 05
+    79	                 BITCOIN_SPAM_06  BitCoin spam pattern 06
+    80	                 BITCOIN_SPAM_07  BitCoin spam pattern 07
+    81	                 BITCOIN_SPAM_08  BitCoin spam pattern 08
+    82	                 BITCOIN_SPAM_09  BitCoin spam pattern 09
+    83	                 BITCOIN_SPAM_10  BitCoin spam pattern 10
+    84	                 BITCOIN_SPAM_11  BitCoin spam pattern 11
+    85	                 BITCOIN_SPAM_12  BitCoin spam pattern 12
+    86	             BITCOIN_SPF_ONLYALL  Bitcoin from a domain specifically set to pass +all SPF
+    87	                  BITCOIN_WFH_01  Work-from-Home + bitcoin
+    88	                   BITCOIN_XPRIO  Bitcoin + priority
+    89	               BITCOIN_YOUR_INFO  BitCoin with your personal info
+    90	               BLANK_LINES_80_90  Message body has 80-90% blank lines
+    91	                      BODY_8BITS  Body includes 8 consecutive 8-bit characters
+    92	               BODY_ENHANCEMENT2  Information on getting larger body parts
+    93	                BODY_ENHANCEMENT  Information on growing body parts
+    94	                 BODY_SINGLE_URI  Message body is only a URI
+    95	                BODY_SINGLE_WORD  Message body is only one word (no spaces)
+    96	                   BODY_URI_ONLY  Message body is only a URI in one line of text or for an image
+    97	              BOGUS_MIME_VERSION  Mime version header is bogus
+    98	                  BOGUS_MSM_HDRS  Apparently bogus Microsoft email headers
+    99	                      BOMB_FREEM  Bomb + freemail
+   100	                      BOMB_MONEY  Bomb + money: bomb threat?
+   101	                  BOUNCE_MESSAGE  MTA bounce message
+   102	                         BTC_ORG  Bitcoin wallet ID + unusual header
+   103	               BULK_RE_SUSP_NTLD  Precedence bulk and RE: from a suspicious TLD
+   104	                     CANT_SEE_AD  You really want to see our spam.
+   105	              CHALLENGE_RESPONSE  Challenge-Response message for mail you sent
+   106	                 CHARSET_FARAWAY  Character set indicates a foreign language
+   107	          CHARSET_FARAWAY_HEADER  A foreign language charset used in headers
+   108	                 CK_HELO_GENERIC  Relay used name indicative of a Dynamic Pool or Generic rPTR
+   109	                  CN_B2B_SPAMMER  Chinese company introducing itself
+   110	               COMMENT_GIBBERISH  Nonsense in long HTML comment
+   111	                CONFIRMED_FORGED  Received headers are forged
+   112	              CONTENT_AFTER_HTML  More content after HTML close tag
+   113	       CORRUPT_FROM_LINE_IN_HDRS  Informational: message is corrupt, with a From line in its headers
+   114	                CRBOUNCE_MESSAGE  Challenge-Response bounce message
+   115	               CTE_8BIT_MISMATCH  Header says 7bits but body disagrees
+   116	                CTYPE_8SPACE_GIF  Stock spam image part 'Content-Type' found (8 spc)
+   117	                        CUM_SHOT  Possible porn - Cum Shot
+   118	            DATE_IN_FUTURE_03_06  Date: is 3 to 6 hours after Received: date
+   119	            DATE_IN_FUTURE_06_12  Date: is 6 to 12 hours after Received: date
+   120	            DATE_IN_FUTURE_12_24  Date: is 12 to 24 hours after Received: date
+   121	            DATE_IN_FUTURE_24_48  Date: is 24 to 48 hours after Received: date
+   122	            DATE_IN_FUTURE_48_96  Date: is 48 to 96 hours after Received: date
+   123	             DATE_IN_FUTURE_96_Q  Date: is 4 days to 4 months after Received: date
+   124	            DATE_IN_FUTURE_96_XX  Date: is 96 hours or more after Received: date
+   125	              DATE_IN_PAST_03_06  Date: is 3 to 6 hours before Received: date
+   126	              DATE_IN_PAST_06_12  Date: is 6 to 12 hours before Received: date
+   127	              DATE_IN_PAST_12_24  Date: is 12 to 24 hours before Received: date
+   128	              DATE_IN_PAST_24_48  Date: is 24 to 48 hours before Received: date
+   129	              DATE_IN_PAST_96_XX  Date: is 96 hours or more before Received: date
+   130	               DATE_SPAMWARE_Y2K  Date header uses unusual Y2K formatting
+   131	                       DCC_CHECK  Detected as bulk mail by DCC (dcc-servers.net)
+   132	                 DCC_REPUT_00_12  DCC reputation between 0 and 12 % (mostly ham)
+   133	                 DCC_REPUT_13_19  DCC reputation between 13 and 19 %
+   134	                 DCC_REPUT_70_89  DCC reputation between 70 and 89 %
+   135	                 DCC_REPUT_90_94  DCC reputation between 90 and 94 %
+   136	                 DCC_REPUT_95_98  DCC reputation between 95 and 98 % (mostly spam)
+   137	                DCC_REPUT_99_100  DCC reputation between 99 % or higher (spam)
+   138	            __DC_GIF_MULTI_LARGO  Message has 2+ inline gif covering lots of area
+   139	                DC_GIF_UNO_LARGO  Message contains a single large gif image
+   140	              DC_IMAGE_SPAM_HTML  Possible Image-only spam
+   141	              DC_IMAGE_SPAM_TEXT  Possible Image-only spam with little text
+   142	             __DC_IMG_HTML_RATIO  Low rawbody to pixel area ratio
+   143	             __DC_IMG_TEXT_RATIO  Low body to pixel area ratio
+   144	            __DC_PNG_MULTI_LARGO  Message has 2+ png images covering lots of area
+   145	                DC_PNG_UNO_LARGO  Message contains a single large png image
+   146	                DEAR_BENEFICIARY  Dear Beneficiary:
+   147	                 DEAR_EMAIL_USER  Dear Email User:
+   148	                     DEAR_FRIEND  Dear Friend? That's not very dear!
+   149	                  DEAR_SOMETHING  Contains 'Dear (something)'
+   150	                     DEAR_WINNER  Spam with generic salutation of "dear winner"
+   151	                          DIET_1  Lose Weight Spam
+   152	                 DIGEST_MULTIPLE  Message hits more than one network digest check
+   153	                   DKIM_ADSP_ALL  No valid author signature, domain signs all mail
+   154	           DKIM_ADSP_CUSTOM_HIGH  No valid author signature, adsp_override is CUSTOM_HIGH
+   155	            DKIM_ADSP_CUSTOM_LOW  No valid author signature, adsp_override is CUSTOM_LOW
+   156	            DKIM_ADSP_CUSTOM_MED  No valid author signature, adsp_override is CUSTOM_MED
+   157	               DKIM_ADSP_DISCARD  No valid author signature, domain signs all mail and suggests discarding the rest
+   158	              DKIM_ADSP_NXDOMAIN  No valid author signature and domain not in DNS
+   159	               __DKIM_DEPENDABLE  A validation failure not attributable to truncation
+   160	                    DKIM_INVALID  DKIM or DK signature exists, but is not valid
+   161	                     DKIM_SIGNED  Message has a DKIM or DK signature, not necessarily valid
+   162	                   DKIM_VALID_AU  Message has a valid DKIM or DK signature from author's domain
+   163	                   DKIM_VALID_EF  Message has a valid DKIM or DK signature from envelope-from domain
+   164	                      DKIM_VALID  Message has at least one valid DKIM or DK signature
+   165	                       DKIMWL_BL  DKIMwl.org - Blocked sender
+   166	                  DKIMWL_BLOCKED  ADMINISTRATOR NOTICE: The query to DKIMWL.org was blocked. See http://wiki.apache.org/spamassassin/DnsBlocklists\#dnsbl-block for more information.
+   167	                  DKIMWL_WL_HIGH  DKIMwl.org - High trust sender
+   168	                   DKIMWL_WL_MED  DKIMwl.org - Medium trust sender
+   169	                 DKIMWL_WL_MEDHI  DKIMwl.org - Medium-high trust sender
+   170	            DOS_ANAL_SPAM_MAILER  X-mailer pattern common to anal porn site spam
+   171	                  DOS_FIX_MY_URI  Looks like a "fix my obfu'd URI please" spam
+   172	              DOS_HIGH_BAT_TO_MX  The Bat! Direct to MX with High Bits
+   173	                  DOS_LET_GO_JOB  Let go from their job and now makes lots of dough!
+   174	                    DOS_OE_TO_MX  Delivered direct to MX with OE headers
+   175	              DOS_OE_TO_MX_IMAGE  Direct to MX with OE headers and an image
+   176	               DOS_OUTLOOK_TO_MX  Delivered direct to MX with Outlook headers
+   177	         DOS_OUTLOOK_TO_MX_IMAGE  Direct to MX with Outlook headers and an image
+   178	             DOS_RCVD_IP_TWICE_C  Received from the same IP twice in a row (only one external relay; empty or IP helo)
+   179	                   DOS_STOCK_BAT  Probable pump and dump stock spam
+   180	                DOS_URI_ASTERISK  Found an asterisk in a URI
+   181	                  DOS_YOUR_PLACE  Russian dating spam
+   182	                    DOTGOV_IMAGE  .gov URI + hosted image
+   183	                     DRUG_DOSAGE  Talks about price per dose
+   184	                    DRUG_ED_CAPS  Mentions an E.D. drug
+   185	                 DRUG_ED_GENERIC  Mentions Generic Viagra
+   186	                  DRUG_ED_ONLINE  Fast Viagra Delivery
+   187	                    DRUG_ED_SILD  Talks about an E.D. drug using its chemical name
+   188	              DRUGS_ANXIETY_EREC  Refers to both an erectile and an anxiety drug
+   189	              DRUGS_ANXIETY_OBFU  Obfuscated reference to an anxiety control drug
+   190	                   DRUGS_ANXIETY  Refers to an anxiety control drug
+   191	                 DRUGS_DIET_OBFU  Obfuscated reference to a diet drug
+   192	                      DRUGS_DIET  Refers to a diet drug
+   193	             DRUGS_ERECTILE_OBFU  Obfuscated reference to an erectile drug
+   194	                  DRUGS_ERECTILE  Refers to an erectile drug
+   195	                      DRUGS_HDIA  Subject mentions "hoodia"
+   196	                 DRUGS_MANYKINDS  Refers to at least four kinds of drugs
+   197	                    DRUGS_MUSCLE  Refers to a muscle relaxant
+   198	                DRUGS_SLEEP_EREC  Refers to both an erectile and a sleep aid drug
+   199	                    DRUGS_SMEAR1  Two or more drugs crammed together into one word
+   200	              DSN_NO_MIMEVERSION  Return-Path <> and no MIME-Version: header
+   201	                      DX_TEXT_02  "change your message stat"
+   202	                      DX_TEXT_03  "XXX Media Group"
+   203	                   DYNAMIC_IMGUR  dynamic IP + hosted image
+   204	       DYN_RDNS_AND_INLINE_IMAGE  Contains image, and was sent by dynamic rDNS
+   205	        DYN_RDNS_SHORT_HELO_HTML  Sent by dynamic rDNS, short HELO, and HTML
+   206	       DYN_RDNS_SHORT_HELO_IMAGE  Short HELO string, dynamic rDNS, inline image
+   207	          EBAY_IMG_NOT_RCVD_EBAY  E-bay hosted image but message not from E-bay
+   208	                     EMAIL_ROT13  Body contains a ROT13-encoded email address
+   209	                   EMPTY_MESSAGE  Message appears to have no textual parts and no Subject: text
+   210	                           EMRCP  "Excess Maximum Return Capital Profit" scam
+   211	                        EM_ROLEX  Message puts emphasis on the watch manufacturer
+   212	               ENCRYPTED_MESSAGE  Message is encrypted, not likely to be spam
+   213	               END_FUTURE_EMAILS  Spammy unsubscribe
+   214	             ENGLISH_UCE_SUBJECT  Subject contains an English UCE tag
+   215	           ENV_AND_HDR_SPF_MATCH  Env and Hdr From used in default SPF WL Match
+   216	               ENVFROM_GOOG_TRIX  From suspicious Google subdomain
+   217	                       EXCUSE_24  Claims you wanted this ad
+   218	                        EXCUSE_4  Claims you can be removed from the list
+   219	                   EXCUSE_REMOVE  Talks about how to be removed from mailings
+   220	              FAKE_OUTBLAZE_RCVD  Received header contains faked 'mr.outblaze.com'
+   221	                       FBI_MONEY  The FBI wants to give you lots of money?
+   222	                       FBI_SPOOF  Claims to be FBI, but not from FBI domain
+   223	                        FIN_FREE  Freedom of a financial nature
+   224	               FORGED_GMAIL_RCVD  'From' gmail.com does not match 'Received' headers
+   225	            FORGED_HOTMAIL_RCVD2  hotmail.com 'From' address, but no 'Received:'
+   226	                 FORGED_IMS_HTML  IMS can't send HTML message only
+   227	                 FORGED_IMS_TAGS  IMS mailers can't send HTML in this format
+   228	                FORGED_MSGID_AOL  Message-ID is forged, (aol.com)
+   229	             FORGED_MSGID_EXCITE  Message-ID is forged, (excite.com)
+   230	            FORGED_MSGID_HOTMAIL  Message-ID is forged, (hotmail.com)
+   231	                FORGED_MSGID_MSN  Message-ID is forged, (msn.com)
+   232	              FORGED_MSGID_YAHOO  Message-ID is forged, (yahoo.com)
+   233	               FORGED_MUA_EUDORA  Forged mail pretending to be from Eudora
+   234	                  FORGED_MUA_IMS  Forged mail pretending to be from IMS
+   235	              FORGED_MUA_MOZILLA  Forged mail pretending to be from Mozilla
+   236	                 FORGED_MUA_OIMO  Forged mail pretending to be from MS Outlook IMO
+   237	              FORGED_MUA_OUTLOOK  Forged mail pretending to be from MS Outlook
+   238	          FORGED_MUA_THEBAT_BOUN  Mail pretending to be from The Bat! (boundary)
+   239	            FORGED_MUA_THEBAT_CS  Mail pretending to be from The Bat! (charset)
+   240	             FORGED_OUTLOOK_HTML  Outlook can't send HTML message only
+   241	             FORGED_OUTLOOK_TAGS  Outlook can't send HTML in this format
+   242	            FORGED_QUALCOMM_TAGS  QUALCOMM mailers can't send HTML in this format
+   243	              __FORGED_TBIRD_IMG  Possibly forged Thunderbird image spam
+   244	              FORGED_TELESP_RCVD  Contains forged hostname for a DSL IP in Brazil
+   245	              FORGED_THEBAT_HTML  The Bat! can't send HTML message only
+   246	               FORGED_YAHOO_RCVD  'From' yahoo.com does not match 'Received' headers
+   247	                    FORM_FRAUD_3  Fill a form and several fraud phrases
+   248	                    FORM_FRAUD_5  Fill a form and many fraud phrases
+   249	                      FORM_FRAUD  Fill a form and a fraud phrase
+   250	               FORM_LOW_CONTRAST  Fill in a form with hidden text
+   251	                 FORWARD_LOOKING  Stock Disclaimer Statement
+   252	                       FOUND_YOU  I found you...
+   253	              FRAGMENTED_MESSAGE  Partial message
+   254	      FREEMAIL_ENVFROM_END_DIGIT  Envelope-from freemail username ends in digit
+   255	         FREEMAIL_FORGED_REPLYTO  Freemail in Reply-To, but not From
+   256	                   FREEMAIL_FROM  Sender email is commonly abused enduser mail provider
+   257	                  FREEMAIL_REPLY  From and body contain different freemails
+   258	      FREEMAIL_REPLYTO_END_DIGIT  Reply-To freemail username ends in digit
+   259	                FREEMAIL_REPLYTO  Reply-To/From or Reply-To/body contain different freemails
+   260	                 FREEMAIL_WFH_01  Work-from-Home + freemail
+   261	         FREEM_FRNUM_UNICD_EMPTY  Numeric freemail From address, unicode From name and Subject, empty body
+   262	                       FREE_PORN  Possible porn - Free Porn
+   263	              FREE_QUOTE_INSTANT  Free express or no-obligation quote
+   264	      FRNAME_IN_MSG_XPRIO_NO_SUB  From name in message + X-Priority + short or no subject
+   265	             FROM_2_EMAILS_SHORT  Short body and From looks like 2 different emails
+   266	                    FROM_ADDR_WS  Malformed From address
+   267	                FROM_BANK_NOAUTH  From Bank domain but no SPF or DKIM
+   268	                 FROM_BLANK_NAME  From: contains empty name
+   269	             FROM_DOMAIN_NOVOWEL  From: domain has series of non-vowel letters
+   270	              FROM_EXCESS_BASE64  From: base64 encoded unnecessarily
+   271	            FROM_FMBLA_NDBLOCKED  ADMINISTRATOR NOTICE: The query to fresh.fmb.la was blocked. See http://wiki.apache.org/spamassassin/DnsBlocklists\#dnsbl-block for more information.
+   272	             FROM_FMBLA_NEWDOM14  From domain was registered in last 7-14 days
+   273	             FROM_FMBLA_NEWDOM28  From domain was registered in last 14-28 days
+   274	               FROM_FMBLA_NEWDOM  From domain was registered in last 7 days
+   275	                FROM_GOV_DKIM_AU  From Government address and DKIM signed
+   276	       FROM_GOV_REPLYTO_FREEMAIL  From Government domain but ReplyTo is FREEMAIL
+   277	                  FROM_GOV_SPOOF  From Government domain but matches SPOOFED
+   278	              FROM_ILLEGAL_CHARS  From: has too many raw illegal characters
+   279	             FROM_IN_TO_AND_SUBJ  From address is in To and Subject
+   280	               FROM_LOCAL_DIGITS  From: localpart has long digit sequence
+   281	                  FROM_LOCAL_HEX  From: localpart has long hexadecimal sequence
+   282	              FROM_LOCAL_NOVOWEL  From: localpart has series of non-vowel letters
+   283	                  FROM_MISSPACED  From: missing whitespace
+   284	                FROM_MISSP_DYNIP  From misspaced + dynamic rDNS
+   285	             FROM_MISSP_EH_MATCH  From misspaced, matches envelope
+   286	                 FROM_MISSP_MSFT  From misspaced + supposed Microsoft tool
+   287	                FROM_MISSP_PHISH  Malformed, claims to be from financial organization - possible phish
+   288	            FROM_MISSP_TO_UNDISC  From misspaced, To undisclosed
+   289	                 FROM_MISSP_USER  From misspaced, from "User"
+   290	                 FROM_NEWDOM_BTC  Newdomain with Bitcoin ID
+   291	                    FROM_NO_USER  From: has no local-part before @ sign
+   292	              FROM_NTLD_LINKBAIT  From abused NTLD with little more than a URI
+   293	        FROM_NTLD_REPLY_FREEMAIL  From abused NTLD and Reply-To is FREEMAIL
+   294	          FROM_NUMBERO_NEWDOMAIN  Fingerprint and new domain
+   295	                FROM_NUMERIC_TLD  From: address has numeric TLD
+   296	                     FROM_OFFERS  From address is "at something-offers"
+   297	               FROM_PAYPAL_SPOOF  From PayPal domain but matches SPOOFED
+   298	           FROM_STARTS_WITH_NUMS  From: starts with several numbers
+   299	         FROM_SUSPICIOUS_NTLD_FP  From abused NTLD
+   300	            FROM_SUSPICIOUS_NTLD  From abused NTLD
+   301	                     FROM_UNBAL2  From with unbalanced angle brackets, '<' missing
+   302	                   FROM_WSP_LEAD  Leading whitespace after '<' in From header field
+   303	                  FROM_WSP_TRAIL  Trailing whitespace before '>' in From header field
+   304	                    FSL_BULK_SIG  Bulk signature with no Unsubscribe
+   305	               FSL_CTYPE_WIN1251  Content-Type only seen in 419 spam
+   306	               FSL_NEW_HELO_USER  Spam's using Helo and User
+   307	                FUZZY_AFFORDABLE  Attempt to obfuscate words in spam
+   308	                   FUZZY_BILLION  Attempt to obfuscate words in spam
+   309	                     FUZZY_CPILL  Attempt to obfuscate words in spam
+   310	                    FUZZY_CREDIT  Attempt to obfuscate words in spam
+   311	                 FUZZY_GUARANTEE  Attempt to obfuscate words in spam
+   312	                FUZZY_MEDICATION  Attempt to obfuscate words in spam
+   313	                   FUZZY_MERIDIA  Obfuscation of the word "meridia"
+   314	                   FUZZY_MILLION  Attempt to obfuscate words in spam
+   315	                    FUZZY_MONERO  Obfuscated "Monero"
+   316	                     FUZZY_MONEY  Attempt to obfuscate words in spam
+   317	                  FUZZY_MORTGAGE  Attempt to obfuscate words in spam
+   318	                FUZZY_OBLIGATION  Attempt to obfuscate words in spam
+   319	                    FUZZY_OFFERS  Attempt to obfuscate words in spam
+   320	                  FUZZY_PHARMACY  Attempt to obfuscate words in spam
+   321	                     FUZZY_PHENT  Attempt to obfuscate words in spam
+   322	                 FUZZY_PRESCRIPT  Attempt to obfuscate words in spam
+   323	                    FUZZY_PRICES  Attempt to obfuscate words in spam
+   324	                 FUZZY_REFINANCE  Attempt to obfuscate words in spam
+   325	                    FUZZY_REMOVE  Attempt to obfuscate words in spam
+   326	                  FUZZY_SOFTWARE  Attempt to obfuscate words in spam
+   327	                 FUZZY_THOUSANDS  Attempt to obfuscate words in spam
+   328	                     FUZZY_VIOXX  Attempt to obfuscate words in spam
+   329	                     FUZZY_VLIUM  Attempt to obfuscate words in spam
+   330	                     FUZZY_VPILL  Attempt to obfuscate words in spam
+   331	                     FUZZY_XPILL  Attempt to obfuscate words in spam
+   332	                   GAPPY_SUBJECT  Subject: contains G.a.p.p.y-T.e.x.t
+   333	              __GB_BITCOIN_CP_DE  German Bitcoin scam
+   334	              __GB_BITCOIN_CP_EN  English Bitcoin scam
+   335	              __GB_BITCOIN_CP_ES  Spanish Bitcoin scam
+   336	              __GB_BITCOIN_CP_FR  French Bitcoin scam
+   337	              __GB_BITCOIN_CP_IT  Italian Bitcoin scam
+   338	                   GB_BITCOIN_CP  Localized Bitcoin scam
+   339	              __GB_BITCOIN_CP_NL  Dutch Bitcoin scam
+   340	              __GB_BITCOIN_CP_SE  Swedish Bitcoin scam
+   341	                GB_FAKE_RF_SHORT  Fake reply or forward with url shortener
+   342	           GB_FORGED_MUA_POSTFIX  Forged Postfix mua headers
+   343	                 GB_GOOGLE_OBFUR  Obfuscate url through Google redirect
+   344	              GMD_PDF_EMPTY_BODY  Attached PDF with empty message body
+   345	               GMD_PDF_ENCRYPTED  Attached PDF is encrypted
+   346	                   GMD_PDF_HORIZ  Contains pdf 100-240 (high) x 450-800 (wide)
+   347	                  GMD_PDF_SQUARE  Contains pdf 180-360 (high) x 180-360 (wide)
+   348	                    GMD_PDF_VERT  Contains pdf 450-800 (high) x 100-240 (wide)
+   349	            GMD_PRODUCER_EASYPDF  PDF producer was BCL easyPDF
+   350	                GMD_PRODUCER_GPL  PDF producer was GPL Ghostscript
+   351	           GMD_PRODUCER_POWERPDF  PDF producer was PowerPDF
+   352	          GOOGLE_DOCS_PHISH_MANY  Phishing via a Google Docs form
+   353	               GOOGLE_DOCS_PHISH  Possible phishing via a Google Docs form
+   354	                 GOOGLE_DOC_SUSP  Suspicious use of Google Docs
+   355	     GOOGLE_DRIVE_REPLY_BAD_NTLD  From Google Drive and Reply-To is from a suspicious TLD
+   356	               GOOG_MALWARE_DNLD  File download via Google - Malware?
+   357	             GOOG_REDIR_DOCUSIGN  Indirect docusign link, probable phishing
+   358	            GOOG_REDIR_HTML_ONLY  Google redirect to obscure spamvertised website + HTML only
+   359	               GOOG_REDIR_NORDNS  Google redirect to obscure spamvertised website + no rDNS
+   360	                GOOG_REDIR_SHORT  Google redirect to obscure spamvertised website + short message
+   361	            GOOG_STO_EMAIL_PHISH  Possible phishing with google hosted content URI having email address
+   362	        GOOG_STO_HTML_PHISH_MANY  Phishing with google content hosting to avoid URIBL
+   363	             GOOG_STO_HTML_PHISH  Possible phishing with google content hosting to avoid URIBL
+   364	               GOOG_STO_IMG_HTML  Apparently using google content hosting to avoid URIBL
+   365	             GOOG_STO_IMG_NOHTML  Apparently using google content hosting to avoid URIBL
+   366	             GOOG_STO_NOIMG_HTML  Apparently using google content hosting to avoid URIBL
+   367	                           GTUBE  Generic Test for Unsolicited Bulk Email
+   368	          GUARANTEED_100_PERCENT  One hundred percent guaranteed
+   369	                      __HAS_HREF  Has an anchor tag with a href attribute in non-quoted line
+   370	              __HAS_HREF_ONECASE  Has an anchor tag with a href attribute in non-quoted line with consistent case
+   371	                   __HAS_IMG_SRC  Has an img tag on a non-quoted line
+   372	           __HAS_IMG_SRC_ONECASE  Has an img tag on a non-quoted line with consistent case
+   373	                  HAS_X_NO_RELAY  Has spammy header
+   374	        HAS_X_OUTGOING_SPAM_STAT  Has header claiming outbound spam scan - why trust the results?
+   375	         HDR_ORDER_FTSDMCXX_001C  Header order similar to spam (FTSDMCXX/MID variant)
+   376	          HDR_ORDER_FTSDMCXX_BAT  Header order similar to spam (FTSDMCXX/boundary variant)
+   377	       HDR_ORDER_FTSDMCXX_DIRECT  Header order similar to spam (FTSDMCXX/boundary variant) + direct-to-MX
+   378	       HDR_ORDER_FTSDMCXX_NORDNS  Header order similar to spam (FTSDMCXX/boundary variant) + no rDNS
+   379	              HDRS_LCASE_IMGONLY  Odd capitalization of message headers + image-only HTML
+   380	                      HDRS_LCASE  Odd capitalization of message header
+   381	                      HDRS_MISSP  Misspaced headers
+   382	              HEADER_COUNT_CTYPE  Multiple Content-Type headers found
+   383	            HEADER_COUNT_SUBJECT  Multiple Subject headers found
+   384	                     HEADER_SPAM  Bulk email fingerprint (header-based) found
+   385	              HEAD_ILLEGAL_CHARS  Headers have too many raw illegal characters
+   386	                       HEAD_LONG  Message headers are very long
+   387	          HELO_DYNAMIC_CHELLO_NL  Relay HELO'd using suspicious hostname (Chello.nl)
+   388	               HELO_DYNAMIC_DHCP  Relay HELO'd using suspicious hostname (DHCP)
+   389	             HELO_DYNAMIC_DIALIN  Relay HELO'd using suspicious hostname (T-Dialin)
+   390	                HELO_DYNAMIC_HCC  Relay HELO'd using suspicious hostname (HCC)
+   391	              HELO_DYNAMIC_HEXIP  Relay HELO'd using suspicious hostname (Hex IP)
+   392	            HELO_DYNAMIC_HOME_NL  Relay HELO'd using suspicious hostname (Home.nl)
+   393	            HELO_DYNAMIC_IPADDR2  Relay HELO'd using suspicious hostname (IP addr 2)
+   394	             HELO_DYNAMIC_IPADDR  Relay HELO'd using suspicious hostname (IP addr 1)
+   395	             HELO_DYNAMIC_ROGERS  Relay HELO'd using suspicious hostname (Rogers)
+   396	           HELO_DYNAMIC_SPLIT_IP  Relay HELO'd using suspicious hostname (Split IP)
+   397	                  HELO_NO_DOMAIN  Relay reports its domain incorrectly
+   398	                HELO_STATIC_HOST  Relay HELO'd using static hostname
+   399	                    HEXHASH_WORD  Multiple instances of word + hexadecimal hash
+   400	                 HIDE_WIN_STATUS  Javascript to hide URLs in browser
+   401	                   HK_NAME_DRUGS  From name contains drugs
+   402	               HK_RANDOM_ENVFROM  Envelope sender username looks random
+   403	                  HK_RANDOM_FROM  From username looks random
+   404	               HK_RANDOM_REPLYTO  Reply-To username looks random
+   405	            HOSTED_IMG_DIRECT_MX  Image hosted at large ecomm site, message direct-to-mx
+   406	             HOSTED_IMG_DQ_UNSUB  Image hosted at large ecomm site, IP addr unsub link
+   407	                HOSTED_IMG_FREEM  Image hosted at large ecomm site or redirected, freemail from or reply-to
+   408	                HOSTED_IMG_MULTI  Multiple images hosted at different large ecomm sites, free image sites, or redirected
+   409	         HOSTED_IMG_MULTI_PUB_01  Multiple hosted images at public site
+   410	               HTML_BADTAG_40_50  HTML message is 40% to 50% bad tags
+   411	               HTML_BADTAG_50_60  HTML message is 50% to 60% bad tags
+   412	               HTML_BADTAG_60_70  HTML message is 60% to 70% bad tags
+   413	              HTML_BADTAG_90_100  HTML message is 90% to 100% bad tags
+   414	            HTML_CHARSET_FARAWAY  A foreign language charset used in HTML markup
+   415	          HTML_COMMENT_SAVED_URL  HTML message is a saved web page
+   416	              HTML_COMMENT_SHORT  HTML comment is very short
+   417	                     HTML_EMBEDS  HTML with embedded plugin object
+   418	               HTML_ENTITY_ASCII  Obfuscated ASCII
+   419	          HTML_ENTITY_ASCII_TINY  Obfuscated ASCII + tiny fonts
+   420	                HTML_EXTRA_CLOSE  HTML contains far too many close tags
+   421	              HTML_FONT_FACE_BAD  HTML font face is not a word
+   422	          HTML_FONT_LOW_CONTRAST  HTML font color similar or identical to background
+   423	             HTML_FONT_SIZE_HUGE  HTML font size is huge
+   424	            HTML_FONT_SIZE_LARGE  HTML font size is large
+   425	           HTML_FONT_TINY_NORDNS  Font too small to read, no rDNS
+   426	          HTML_FORMACTION_MAILTO  HTML includes a form which sends mail
+   427	                 HTML_IFRAME_SRC  Message has HTML IFRAME tag with SRC URI
+   428	              HTML_IMAGE_ONLY_04  HTML: images with 0-400 bytes of words
+   429	              HTML_IMAGE_ONLY_08  HTML: images with 400-800 bytes of words
+   430	              HTML_IMAGE_ONLY_12  HTML: images with 800-1200 bytes of words
+   431	              HTML_IMAGE_ONLY_16  HTML: images with 1200-1600 bytes of words
+   432	              HTML_IMAGE_ONLY_20  HTML: images with 1600-2000 bytes of words
+   433	              HTML_IMAGE_ONLY_24  HTML: images with 2000-2400 bytes of words
+   434	              HTML_IMAGE_ONLY_28  HTML: images with 2400-2800 bytes of words
+   435	              HTML_IMAGE_ONLY_32  HTML: images with 2800-3200 bytes of words
+   436	             HTML_IMAGE_RATIO_02  HTML has a low ratio of text to image area
+   437	             HTML_IMAGE_RATIO_04  HTML has a low ratio of text to image area
+   438	             HTML_IMAGE_RATIO_06  HTML has a low ratio of text to image area
+   439	             HTML_IMAGE_RATIO_08  HTML has a low ratio of text to image area
+   440	                    HTML_MESSAGE  HTML included in message
+   441	           HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+   442	              HTML_MISSING_CTYPE  Message is HTML without HTML Content-Type
+   443	           HTML_NONELEMENT_30_40  30% to 40% of HTML elements are non-standard
+   444	           HTML_NONELEMENT_40_50  40% to 50% of HTML elements are non-standard
+   445	           HTML_NONELEMENT_60_70  60% to 70% of HTML elements are non-standard
+   446	           HTML_NONELEMENT_80_90  80% to 90% of HTML elements are non-standard
+   447	            HTML_OBFUSCATE_05_10  Message is 5% to 10% HTML obfuscation
+   448	            HTML_OBFUSCATE_10_20  Message is 10% to 20% HTML obfuscation
+   449	            HTML_OBFUSCATE_20_30  Message is 20% to 30% HTML obfuscation
+   450	            HTML_OBFUSCATE_30_40  Message is 30% to 40% HTML obfuscation
+   451	            HTML_OBFUSCATE_50_60  Message is 50% to 60% HTML obfuscation
+   452	            HTML_OBFUSCATE_70_80  Message is 70% to 80% HTML obfuscation
+   453	           HTML_OBFUSCATE_90_100  Message is 90% to 100% HTML obfuscation
+   454	                   HTML_OFF_PAGE  HTML element rendered well off the displayed page
+   455	               HTML_SHORT_CENTER  HTML is very short with CENTER tag
+   456	           HTML_SHORT_LINK_IMG_1  HTML is very short with a linked image
+   457	           HTML_SHORT_LINK_IMG_2  HTML is very short with a linked image
+   458	           HTML_SHORT_LINK_IMG_3  HTML is very short with a linked image
+   459	               HTML_SINGLET_MANY  Many single-letter HTML format blocks
+   460	           HTML_TAG_BALANCE_BODY  HTML has unbalanced "body" tags
+   461	           HTML_TAG_BALANCE_HEAD  HTML has unbalanced "head" tags
+   462	          HTML_TAG_EXIST_BGSOUND  HTML has "bgsound" tag
+   463	                         HTTP_77  Contains an URL-encoded hostname (HTTP77)
+   464	               HTTP_ESCAPED_HOST  Uses %-escapes inside a URL's hostname
+   465	          HTTP_EXCESSIVE_ESCAPES  Completely unnecessary %-escapes inside a URL
+   466	               HTTPS_IP_MISMATCH  IP to HTTPS link found in HTML
+   467	            IMG_ONLY_FM_DOM_INFO  HTML image-only message from .info domain
+   468	                       IMPOTENCE  Impotence cure
+   469	                    INVALID_DATE  Invalid Date: header (not RFC 2822)
+   470	          INVALID_DATE_TZ_ABSURD  Invalid Date: header (timezone does not exist)
+   471	                   INVALID_MSGID  Message-Id is not valid, according to RFC 2822
+   472	                  INVALID_TZ_CST  Invalid date in header (wrong CST timezone)
+   473	                  INVALID_TZ_EST  Invalid date in header (wrong EST timezone)
+   474	               INVESTMENT_ADVICE  Message mentions investment advice
+   475	                    IP_LINK_PLUS  Dotted-decimal IP address followed by CGI
+   476	               JAPANESE_UCE_BODY  Body contains Japanese UCE tag
+   477	            JAPANESE_UCE_SUBJECT  Subject contains a Japanese UCE tag
+   478	               JH_SPAMMY_HEADERS  Has unusual message header(s) seen primarily in spam
+   479	             JH_SPAMMY_PATTERN01  Unusual pattern seen in spam campaign
+   480	             JH_SPAMMY_PATTERN02  Unusual pattern seen in spam campaign
+   481	                   JOIN_MILLIONS  Join Millions of Americans
+   482	                 JS_FROMCHARCODE  Document is built from a Javascript charcode array
+   483	                KHOP_HELO_FCRDNS  Relay HELO differs from its IP's reverse DNS
+   484	              KOREAN_UCE_SUBJECT  Subject: contains Korean unsolicited email tag
+   485	          LIST_PARTIAL_SHORT_MSG  Incomplete mailing list headers + short message
+   486	              LIST_PRTL_PUMPDUMP  Incomplete List-* headers and stock pump-and-dump
+   487	             LIST_PRTL_SAME_USER  Incomplete List-* headers and from+to user the same
+   488	                       LIVE_PORN  Possible porn - Live Porn
+   489	            LOCALPART_IN_SUBJECT  Local part of To: address appears in Subject
+   490	                    LONG_HEX_URI  Very long purely hexadecimal URI
+   491	                    LONG_IMG_URI  Image URI with very long path component - web bug?
+   492	             LONG_INVISIBLE_TEXT  Long block of hidden text - bayes poison?
+   493	                       LONGWORDS  Long string of long words
+   494	                      LOOPHOLE_1  A loop hole in the banking laws?
+   495	                     LOTTO_AGENT  Claims Agent
+   496	                      LOTTO_DEPT  Claims Department
+   497	                       LOW_PRICE  Lowest Price
+   498	                       LUCRATIVE  Make lots of money!
+   499	              MAILING_LIST_MULTI  Multiple indicators imply a widely-seen list manager
+   500	                    MALE_ENHANCE  Message talks about enhancing men
+   501	                   MALF_HTML_B64  Malformatted base64-encoded HTML content
+   502	                  MALWARE_NORDNS  Malware bragging + no rDNS
+   503	                MALWARE_PASSWORD  Malware bragging + "password"
+   504	               MANY_SPAN_IN_TEXT  Many <SPAN> tags embedded within text
+   505	              MARKETING_PARTNERS  Claims you registered with a partner
+   506	            MICROSOFT_EXECUTABLE  Message includes Microsoft executable program
+   507	                 MILLION_HUNDRED  Million "One to Nine" Hundred
+   508	                     MILLION_USD  Talks about millions of dollars
+   509	            MIME_BAD_ISO_CHARSET  MIME character set is an unknown ISO charset
+   510	                   __MIME_BASE64  Includes a base64 attachment
+   511	                MIME_BASE64_TEXT  Message text disguised using base64 encoding
+   512	            MIME_BOUND_DD_DIGITS  Spam tool pattern in MIME boundary
+   513	            MIME_BOUND_DIGITS_15  Spam tool pattern in MIME boundary
+   514	             MIME_BOUND_MANY_HEX  Spam tool pattern in MIME boundary
+   515	            MIME_CHARSET_FARAWAY  MIME character set indicates foreign language
+   516	          MIME_HEADER_CTYPE_ONLY  'Content-Type' found without required MIME headers
+   517	                MIME_HTML_MOSTLY  Multipart message mostly text/html MIME
+   518	                  MIME_HTML_ONLY  Message only has text/html MIME parts
+   519	            MIME_HTML_ONLY_MULTI  Multipart message only has text/html MIME parts
+   520	            MIMEOLE_DIRECT_TO_MX  MIMEOLE + direct-to-MX
+   521	         MIMEPART_LIMIT_EXCEEDED  Message has too many MIME parts
+   522	                       __MIME_QP  Includes a quoted-printable attachment
+   523	               MIME_QP_LONG_LINE  Quoted-printable line longer than 76 chars
+   524	               MIME_SUSPECT_NAME  MIME filename does not match content
+   525	                    MISSING_DATE  Missing Date: header
+   526	                    MISSING_FROM  Missing From: header
+   527	                  MISSING_HB_SEP  Missing blank line between message header and body
+   528	                 MISSING_HEADERS  Missing To: header
+   529	                     MISSING_MID  Missing Message-Id: header
+   530	             MISSING_MIME_HB_SEP  Missing blank line between MIME header and body
+   531	                 MISSING_MIMEOLE  Message has X-MSMail-Priority, but no X-MimeOLE
+   532	                 MISSING_SUBJECT  Missing Subject: header
+   533	                 MIXED_AREA_CASE  Has area tag in mixed case
+   534	               MIXED_CENTER_CASE  Has center tag in mixed case
+   535	                 MIXED_FONT_CASE  Has font tag in mixed case
+   536	                 MIXED_HREF_CASE  Has href in mixed case
+   537	                  MIXED_IMG_CASE  Has img tag in mixed case
+   538	            __ML_TURNS_SP_TO_TAB  A mailing list changing a space to a TAB
+   539	                 MONERO_DEADLINE  Monero cryptocurrency with a deadline
+   540	                MONERO_EXTORT_01  Extortion spam, pay via Monero cryptocurrency
+   541	                  MONERO_MALWARE  Monero cryptocurrency + malware bragging
+   542	                   MONERO_PAY_ME  Pay me via Monero cryptocurrency
+   543	                  MONEY_ATM_CARD  Lots of money on an ATM card
+   544	                      MONEY_BACK  Money back guarantee
+   545	                      MONEY_FORM  Lots of money if you fill out a form
+   546	                MONEY_FORM_SHORT  Lots of money if you fill out a short form
+   547	                   MONEY_FRAUD_3  Lots of money and several fraud phrases
+   548	                   MONEY_FRAUD_5  Lots of money and many fraud phrases
+   549	                   MONEY_FRAUD_8  Lots of money and very many fraud phrases
+   550	                   MONEY_FROM_41  Lots of money from Africa
+   551	                MONEY_FROM_MISSP  Lots of money and misspaced From
+   552	                    MONEY_NOHTML  Lots of money in plain text
+   553	                        MORE_SEX  Talks about a bigger drive for sex
+   554	            MPART_ALT_DIFF_COUNT  HTML and text parts are different
+   555	                  MPART_ALT_DIFF  HTML and text parts are different
+   556	           MSGID_DOLLARS_URI_IMG  Suspicious Message-ID and image
+   557	           MSGID_FROM_MTA_HEADER  Message-Id was added by a relay
+   558	                  MSGID_HDR_MALF  Has invalid message ID header
+   559	               MSGID_MULTIPLE_AT  Message-ID contains multiple '@' characters
+   560	                   MSGID_NOFQDN1  Message-ID with no domain name
+   561	           MSGID_OUTLOOK_INVALID  Message-Id is fake (in Outlook Express format)
+   562	                     MSGID_RANDY  Message-Id has pattern used in spam
+   563	                     MSGID_SHORT  Message-ID is unusually short
+   564	                 MSGID_SPAM_CAPS  Spam tool Message-Id: (caps variant)
+   565	              MSGID_SPAM_LETTERS  Spam tool Message-Id: (letters variant)
+   566	                MSGID_YAHOO_CAPS  Message-ID has ALLCAPS@yahoo.com
+   567	                  MSM_PRIO_REPTO  MSMail priority header + Reply-to + short subject
+   568	                    MULTI_FORGED  Received headers indicate multiple forgeries
+   569	                      NA_DOLLARS  Talks about a million North American dollars
+   570	        NEWEGG_IMG_NOT_RCVD_NEGG  Newegg hosted image but message not from Newegg
+   571	                    NICE_REPLY_A  Looks like a legit reply (A)
+   572	            NML_ADSP_CUSTOM_HIGH  ADSP custom_high hit, and not from a mailing list
+   573	             NML_ADSP_CUSTOM_LOW  ADSP custom_low hit, and not from a mailing list
+   574	             NML_ADSP_CUSTOM_MED  ADSP custom_med hit, and not from a mailing list
+   575	                 NO_DNS_FOR_FROM  Envelope sender has no MX or A DNS records
+   576	             NO_FM_NAME_IP_HOSTN  No From name + hostname using IP address
+   577	              NO_HEADERS_MESSAGE  Message appears to be missing most RFC-822 headers
+   578	                      NO_MEDICAL  No Medical Exams
+   579	             NONEXISTENT_CHARSET  Character set doesn't exist
+   580	                 NO_PRESCRIPTION  No prescription needed
+   581	             NO_RDNS_DOTCOM_HELO  Host HELO'd as a big ISP, but had no rDNS
+   582	             NORDNS_LOW_CONTRAST  No rDNS + hidden text
+   583	                     NO_RECEIVED  Informational: message has no Received headers
+   584	                       NO_RELAYS  Informational: message was not relayed via SMTP
+   585	               NORMAL_HTTP_TO_IP  URI host has a public dotted-decimal IPv4 address
+   586	                     NOT_ADVISOR  Not registered investment advisor
+   587	                        NOT_SPAM  I'm not spam! Really! I'm not, I'm not, I'm not!
+   588	              __NSL_ORIG_FROM_41  Originates from 41.0.0.0/8
+   589	              __NSL_RCVD_FROM_41  Received from 41.0.0.0/8
+   590	              NSL_RCVD_FROM_USER  Received from User
+   591	              NSL_RCVD_HELO_USER  Received from HELO User
+   592	                    NULL_IN_BODY  Message has NUL (ASCII 0) byte in message
+   593	              NUMBEREND_LINKBAIT  Domain ends in a large number and very short body with link
+   594	               NUMERIC_HTTP_ADDR  Uses a numeric IP address in URL
+   595	                    OBFU_BITCOIN  Obfuscated BitCoin references
+   596	                  OBFU_JVSCR_ESC  Injects content using obfuscated javascript
+   597	             OBFUSCATING_COMMENT  HTML comments which obfuscate text
+   598	                   OBFU_UNSUB_UL  Obfuscated unsubscribe text
+   599	                  OBSCURED_EMAIL  Message seems to contain rot13ed address
+   600	              OFFER_ONLY_AMERICA  Offer only available to US
+   601	                        ONE_TIME  One Time Rip Off
+   602	                 ONLINE_PHARMACY  Online Pharmacy
+   603	               OOOBOUNCE_MESSAGE  Out Of Office bounce message
+   604	                  PART_CID_STOCK  Has a spammy image attachment (by Content-ID)
+   605	             PART_CID_STOCK_LESS  Has a spammy image attachment (by Content-ID, more specific)
+   606	            PDS_BAD_THREAD_QP_64  Bad thread header - short QP
+   607	                      PDS_BTC_ID  FP reduced Bitcoin ID
+   608	                   PDS_BTC_MSGID  Bitcoin ID with T_MSGID_NOFQDN2
+   609	                    PDS_BTC_NTLD  Bitcoin suspect NTLD
+   610	           PDS_DBL_URL_TNB_RUNON  Double-url and To no arrows, from runon
+   611	           PDS_EMPTYSUBJ_URISHRT  Empty subject with little more than URI shortener
+   612	         PDS_FRNOM_TODOM_DBL_URL  From Name to domain, double URL
+   613	        PDS_FRNOM_TODOM_NAKED_TO  Naked to From name equals to Domain
+   614	         PDS_FROM_NAME_TO_DOMAIN  From:name looks like To:domain
+   615	               PDS_HELO_SPF_FAIL  High profile HELO that fails SPF
+   616	             PDS_NAKED_TO_NUMERO  Naked-to, numberonly domain
+   617	    PDS_NO_FULL_NAME_SPOOFED_URL  HTML message short, T_SPOOFED_URL and T_KHOP_NO_FULL_NAME
+   618	               PDS_OTHER_BAD_TLD  Untrustworthy TLDs
+   619	                    PDS_PHP_EVAL  PHP header shows eval'd code
+   620	            PDS_PHP_RUNTIME_FUNC  PHP header shows runtime-created function
+   621	         PDS_SHORTFWD_URISHRT_QP  Apparently a short fwd/re with URI shortener
+   622	           PDS_SHORT_SPOOFED_URL  HTML message short and T_SPOOFED_URL (S_U_FP)
+   623	            PDS_TINYSUBJ_URISHRT  Short subject with URL shortener
+   624	PDS_TONAME_EQ_TOLOCAL_FREEM_FORGE  Forged replyto and __PDS_TONAME_EQ_TOLOCAL
+   625	PDS_TONAME_EQ_TOLOCAL_HDRS_LCASE  To: name matches everything in local email - LCASE headers
+   626	    PDS_TONAME_EQ_TOLOCAL_VSHORT  Very short body and From looks like 2 different emails
+   627	                  PERCENT_RANDOM  Message has a random macro in it
+   628	            PHISH_AZURE_CLOUDAPP  Link to known phishing web application
+   629	                  PHISH_FBASEAPP  Probable phishing via hosted web app
+   630	                   PHP_NOVER_MUA  Mail from PHP with no version number
+   631	            PHP_ORIG_SCRIPT_EVAL  From suspicious PHP source
+   632	                 PHP_ORIG_SCRIPT  Sent by bot & other signs
+   633	                  PHP_SCRIPT_MUA  Sent by PHP script, no version number
+   634	                      PHP_SCRIPT  Sent by PHP script
+   635	                     PLING_QUERY  Subject has exclamation mark and question mark
+   636	         POSSIBLE_APPLE_PHISH_02  Claims to be from apple but not processed by any apple MTA
+   637	          POSSIBLE_EBAY_PHISH_02  Claims to be from ebay but not processed by any ebay MTA
+   638	        POSSIBLE_PAYPAL_PHISH_01  Claims to be from paypal but has non-paypal from email address
+   639	        POSSIBLE_PAYPAL_PHISH_02  Claims to be from paypal but not processed by any paypal MTA
+   640	            PREST_NON_ACCREDITED  'Prestigious Non-Accredited Universities'
+   641	             PREVENT_NONDELIVERY  Message has Prevent-NonDelivery-Report header
+   642	           PRICES_ARE_AFFORDABLE  Message says that prices aren't too expensive
+   643	                  PUMPDUMP_MULTI  Pump-and-dump stock scam phrases
+   644	                        PUMPDUMP  Pump-and-dump stock scam phrase
+   645	                    PUMPDUMP_TIP  Pump-and-dump stock tip
+   646	                     PYZOR_CHECK  Listed in Pyzor (https://pyzor.readthedocs.io/en/latest/)
+   647	          RAND_HEADER_LIST_SPOOF  Random gibberish message header(s) + pretending to be a mailing list
+   648	                RAND_HEADER_MANY  Multiple random gibberish message headers
+   649	                RAND_MKTG_HEADER  Has partially-randomized marketing/tracking header(s)
+   650	                   RATWARE_EFROM  Bulk email fingerprint (envfrom) found
+   651	                 RATWARE_EGROUPS  Bulk email fingerprint (eGroups) found
+   652	               RATWARE_HASH_DASH  Contains a hashbuster in Send-Safe format
+   653	           RATWARE_MOZ_MALFORMED  Bulk email fingerprint (Mozilla malformed) found
+   654	            RATWARE_MPOP_WEBMAIL  Bulk email fingerprint (mPOP Web-Mail)
+   655	                 RATWARE_MS_HASH  Bulk email fingerprint (msgid ms hash) found
+   656	                 RATWARE_NAME_ID  Bulk email fingerprint (msgid from) found
+   657	                 RATWARE_NO_RDNS  Suspicious MsgID and MIME boundary + no rDNS
+   658	            RATWARE_OE_MALFORMED  X-Mailer has malformed Outlook Express version
+   659	          RATWARE_OUTLOOK_NONAME  Bulk email fingerprint (Outlook no name) found
+   660	                 RATWARE_RCVD_AT  Bulk email fingerprint (Received @) found
+   661	                 RATWARE_RCVD_PF  Bulk email fingerprint (Received PF) found
+   662	                 RATWARE_ZERO_TZ  Bulk email fingerprint (+0000) found
+   663	          RAZOR2_CF_RANGE_51_100  Razor2 gives confidence level above 50%
+   664	                    RAZOR2_CHECK  Listed in Razor2 (http://razor.sf.net/)
+   665	                      RCVD_AM_PM  Received headers forged (AM/PM)
+   666	                     RCVD_BAD_ID  Received header contains id field with bad characters
+   667	                     RCVD_DBL_DQ  Malformatted message header
+   668	               RCVD_DOTEDU_SHORT  Via .edu MTA + short message
+   669	            RCVD_DOTEDU_SUSP_URI  Via .edu MTA + suspicious URI
+   670	            RCVD_DOUBLE_IP_LOOSE  Received: by and from look like IP addresses
+   671	             RCVD_DOUBLE_IP_SPAM  Bulk email fingerprint (double IP) found
+   672	           RCVD_FAKE_HELO_DOTCOM  Received contains a faked HELO hostname
+   673	               RCVD_FORGED_WROTE  Forged 'Received' header found ('wrote:' spam)
+   674	           RCVD_HELO_IP_MISMATCH  Received: HELO and IP do not match, but should
+   675	                 RCVD_ILLEGAL_IP  Received: contains illegal IP address
+   676	          RCVD_IN_BL_SPAMCOP_NET  Received via a relay in bl.spamcop.net
+   677	           RCVD_IN_DNSWL_BLOCKED  ADMINISTRATOR NOTICE: The query to DNSWL was blocked. See http://wiki.apache.org/spamassassin/DnsBlocklists\#dnsbl-block for more information.
+   678	                RCVD_IN_DNSWL_HI  Sender listed at https://www.dnswl.org/, high trust
+   679	               RCVD_IN_DNSWL_LOW  Sender listed at https://www.dnswl.org/, low trust
+   680	               RCVD_IN_DNSWL_MED  Sender listed at https://www.dnswl.org/, medium trust
+   681	              RCVD_IN_DNSWL_NONE  Sender listed at https://www.dnswl.org/, no trust
+   682	                 RCVD_IN_IADB_DK  IADB: Sender publishes Domain Keys record
+   683	        RCVD_IN_IADB_DOPTIN_GT50  IADB: Confirmed opt-in used more than 50% of the time
+   684	             RCVD_IN_IADB_DOPTIN  IADB: All mailing list mail is confirmed opt-in
+   685	        RCVD_IN_IADB_DOPTIN_LT50  IADB: Confirmed opt-in used less than 50% of the time
+   686	               RCVD_IN_IADB_EDDB  IADB: Participates in Email Deliverability Database
+   687	               RCVD_IN_IADB_EPIA  IADB: Member of Email Processing Industry Alliance
+   688	           RCVD_IN_IADB_GOODMAIL  IADB: Sender has been certified by GoodMail
+   689	             RCVD_IN_IADB_LISTED  Participates in the IADB system
+   690	              RCVD_IN_IADB_LOOSE  IADB: Adds relationship addrs w/out opt-in
+   691	           RCVD_IN_IADB_MI_CPEAR  IADB: Complies with Michigan's CPEAR law
+   692	          RCVD_IN_IADB_MI_CPR_30  IADB: Checked lists against Michigan's CPR within 30 days
+   693	         RCVD_IN_IADB_MI_CPR_MAT  IADB: Sends no material under Michigan's CPR
+   694	          RCVD_IN_IADB_ML_DOPTIN  IADB: Mailing list email only, confirmed opt-in
+   695	          RCVD_IN_IADB_NOCONTROL  IADB: Has absolutely no mailing controls in place
+   696	                RCVD_IN_IADB_OOO  IADB: One-to-one/transactional email only
+   697	         RCVD_IN_IADB_OPTIN_GT50  IADB: Opt-in used more than 50% of the time
+   698	              RCVD_IN_IADB_OPTIN  IADB: All mailing list mail is opt-in
+   699	         RCVD_IN_IADB_OPTIN_LT50  IADB: Opt-in used less than 50% of the time
+   700	         RCVD_IN_IADB_OPTOUTONLY  IADB: Scrapes addresses, pure opt-out only
+   701	               RCVD_IN_IADB_RDNS  IADB: Sender has reverse DNS record
+   702	           RCVD_IN_IADB_SENDERID  IADB: Sender publishes Sender ID record
+   703	                RCVD_IN_IADB_SPF  IADB: Sender publishes SPF record
+   704	       RCVD_IN_IADB_UNVERIFIED_1  IADB: Accepts unverified sign-ups
+   705	       RCVD_IN_IADB_UNVERIFIED_2  IADB: Accepts unverified sign-ups, gives chance to opt out
+   706	           RCVD_IN_IADB_UT_CPEAR  IADB: Complies with Utah's CPEAR law
+   707	          RCVD_IN_IADB_UT_CPR_30  IADB: Checked lists against Utah's CPR within 30 days
+   708	         RCVD_IN_IADB_UT_CPR_MAT  IADB: Sends no material under Utah's CPR
+   709	            RCVD_IN_IADB_VOUCHED  ISIPP IADB lists as vouched-for sender
+   710	                RCVD_IN_MAPS_DUL  Relay in DUL, http://www.mail-abuse.com/enduserinfo_dul.html
+   711	                RCVD_IN_MAPS_NML  Relay in NML, http://www.mail-abuse.com/enduserinfo_nml.html
+   712	                RCVD_IN_MAPS_OPS  Relay in OPS, http://www.mail-abuse.com/enduserinfo_ops.html
+   713	                RCVD_IN_MAPS_RBL  Relay in RBL, http://www.mail-abuse.com/enduserinfo_rbl.html
+   714	                RCVD_IN_MAPS_RSS  Relay in RSS, http://www.mail-abuse.com/enduserinfo_rss.html
+   715	               RCVD_IN_MSPIKE_BL  Mailspike blacklisted
+   716	               RCVD_IN_MSPIKE_H2  Average reputation (+2)
+   717	               RCVD_IN_MSPIKE_H3  Good reputation (+3)
+   718	               RCVD_IN_MSPIKE_H4  Very Good reputation (+4)
+   719	               RCVD_IN_MSPIKE_H5  Excellent reputation (+5)
+   720	               RCVD_IN_MSPIKE_L2  Suspicious reputation (-2)
+   721	               RCVD_IN_MSPIKE_L3  Low reputation (-3)
+   722	               RCVD_IN_MSPIKE_L4  Bad reputation (-4)
+   723	               RCVD_IN_MSPIKE_L5  Very bad reputation (-5)
+   724	               RCVD_IN_MSPIKE_WL  Mailspike good senders
+   725	              __RCVD_IN_MSPIKE_Z  Spam wave participant
+   726	                     RCVD_IN_PBL  Received via a relay in Spamhaus PBL
+   727	                    RCVD_IN_PSBL  Received via a relay in PSBL
+   728	                 RCVD_IN_SBL_CSS  Received via a relay in Spamhaus SBL-CSS
+   729	                     RCVD_IN_SBL  Received via a relay in Spamhaus SBL
+   730	             RCVD_IN_SORBS_BLOCK  SORBS: sender demands to never be tested
+   731	               RCVD_IN_SORBS_DUL  SORBS: sent directly from dynamic IP address
+   732	              RCVD_IN_SORBS_HTTP  SORBS: sender is open HTTP proxy server
+   733	              RCVD_IN_SORBS_MISC  SORBS: sender is open proxy server
+   734	              RCVD_IN_SORBS_SMTP  SORBS: sender is open SMTP relay
+   735	             RCVD_IN_SORBS_SOCKS  SORBS: sender is open SOCKS proxy server
+   736	                 __RCVD_IN_SORBS  SORBS: sender is listed in SORBS
+   737	               RCVD_IN_SORBS_WEB  SORBS: sender is an abusable web server
+   738	            RCVD_IN_SORBS_ZOMBIE  SORBS: sender is on a hijacked network
+   739	      RCVD_IN_VALIDITY_CERTIFIED  Sender in Validity Certification - Contact certification@validity.com
+   740	           RCVD_IN_VALIDITY_RPBL  Relay in Validity RPBL, https://senderscore.org/blocklistlookup/
+   741	           RCVD_IN_VALIDITY_SAFE  Sender in Validity Safe - Contact certification@validity.com
+   742	                     RCVD_IN_XBL  Received via a relay in Spamhaus XBL
+   743	             RCVD_IN_ZEN_BLOCKED  ADMINISTRATOR NOTICE: The query to zen.spamhaus.org was blocked. See https://www.spamhaus.org/returnc/vol/
+   744	     RCVD_IN_ZEN_BLOCKED_OPENDNS  ADMINISTRATOR NOTICE: The query to zen.spamhaus.org was blocked due to usage of an open resolver. See https://www.spamhaus.org/returnc/pub/
+   745	                   __RCVD_IN_ZEN  Received via a relay in Spamhaus Zen
+   746	                   RCVD_MAIL_COM  Forged Received header (contains post.com or mail.com)
+   747	         __RDNS_DYNAMIC_ADELPHIA  Relay HELO'd using suspicious hostname (Adelphia)
+   748	            __RDNS_DYNAMIC_ATTBI  Relay HELO'd using suspicious hostname (ATTBI.com)
+   749	        __RDNS_DYNAMIC_CHELLO_NL  Relay HELO'd using suspicious hostname (Chello.nl)
+   750	        __RDNS_DYNAMIC_CHELLO_NO  Relay HELO'd using suspicious hostname (Chello.no)
+   751	          __RDNS_DYNAMIC_COMCAST  Relay HELO'd using suspicious hostname (Comcast)
+   752	                    RDNS_DYNAMIC  Delivered to internal network by host with dynamic-looking rDNS
+   753	             __RDNS_DYNAMIC_DHCP  Relay HELO'd using suspicious hostname (DHCP)
+   754	           __RDNS_DYNAMIC_DIALIN  Relay HELO'd using suspicious hostname (T-Dialin)
+   755	              __RDNS_DYNAMIC_HCC  Relay HELO'd using suspicious hostname (HCC)
+   756	            __RDNS_DYNAMIC_HEXIP  Relay HELO'd using suspicious hostname (Hex IP)
+   757	           __RDNS_DYNAMIC_IPADDR  Relay HELO'd using suspicious hostname (IP addr 1)
+   758	              __RDNS_DYNAMIC_NTL  Relay HELO'd using suspicious hostname (NTL)
+   759	              __RDNS_DYNAMIC_OOL  Relay HELO'd using suspicious hostname (OptOnline)
+   760	           __RDNS_DYNAMIC_ROGERS  Relay HELO'd using suspicious hostname (Rogers)
+   761	              __RDNS_DYNAMIC_RR2  Relay HELO'd using suspicious hostname (RR 2)
+   762	         __RDNS_DYNAMIC_SPLIT_IP  Relay HELO'd using suspicious hostname (Split IP)
+   763	            __RDNS_DYNAMIC_TELIA  Relay HELO'd using suspicious hostname (Telia)
+   764	            __RDNS_DYNAMIC_VELOX  Relay HELO'd using suspicious hostname (Veloxzone)
+   765	              __RDNS_DYNAMIC_VTR  Relay HELO'd using suspicious hostname (VTR)
+   766	          __RDNS_DYNAMIC_YAHOOBB  Relay HELO'd using suspicious hostname (YahooBB)
+   767	                  RDNS_LOCALHOST  Sender's public rDNS is "localhost"
+   768	                       RDNS_NONE  Delivered to internal network by a host with no rDNS
+   769	             RDNS_NUM_TLD_ATCHNX  Relay rDNS has numeric TLD + suspicious attachment
+   770	                 RDNS_NUM_TLD_XM  Relay rDNS has numeric TLD + suspicious headers
+   771	                   REFINANCE_NOW  Home refinancing
+   772	             REFINANCE_YOUR_HOME  Home refinancing
+   773	              REMOVE_BEFORE_LINK  Removal phrase right before a link
+   774	                   REPLICA_WATCH  Message talks about a replica watch
+   775	                   REPLYTO_EMPTY  Reply-To undeliverable
+   776	       REPTO_419_FRAUD_AOL_LOOSE  Ends-in-digits Reply-To is similar to known advance fee fraud collector mailbox
+   777	             REPTO_419_FRAUD_AOL  Reply-To is known advance fee fraud collector mailbox
+   778	             REPTO_419_FRAUD_CNS  Reply-To is known advance fee fraud collector mailbox
+   779	        REPTO_419_FRAUD_GM_LOOSE  Ends-in-digits Reply-To is similar to known advance fee fraud collector mailbox
+   780	              REPTO_419_FRAUD_GM  Reply-To is known advance fee fraud collector mailbox
+   781	              REPTO_419_FRAUD_HM  Reply-To is known advance fee fraud collector mailbox
+   782	              REPTO_419_FRAUD_OL  Reply-To is known advance fee fraud collector mailbox
+   783	              REPTO_419_FRAUD_PM  Reply-To is known advance fee fraud collector mailbox
+   784	              REPTO_419_FRAUD_QQ  Reply-To is known advance fee fraud collector mailbox
+   785	                 REPTO_419_FRAUD  Reply-To is known advance fee fraud collector mailbox
+   786	        REPTO_419_FRAUD_YH_LOOSE  Ends-in-digits Reply-To is similar to known advance fee fraud collector mailbox
+   787	              REPTO_419_FRAUD_YH  Reply-To is known advance fee fraud collector mailbox
+   788	              REPTO_419_FRAUD_YJ  Reply-To is known advance fee fraud collector mailbox
+   789	              REPTO_419_FRAUD_YN  Reply-To is known advance fee fraud collector mailbox
+   790	                 REPTO_QUOTE_AOL  AOL doesn't do quoting like this
+   791	                 REPTO_QUOTE_IMS  IMS doesn't do quoting like this
+   792	                 REPTO_QUOTE_MSN  MSN doesn't do quoting like this
+   793	            REPTO_QUOTE_QUALCOMM  Qualcomm/Eudora doesn't do quoting like this
+   794	               REPTO_QUOTE_YAHOO  Yahoo! doesn't do quoting like this
+   795	                       RISK_FREE  No risk!
+   796	                       RUDE_HTML  Spammer message says you need an HTML mailer
+   797	            SENDGRID_REDIR_PHISH  Redirect URI via Sendgrid + phishing signs
+   798	                  SENDGRID_REDIR  Redirect URI via Sendgrid
+   799	                   SEO_SUSP_NTLD  SEO offer from suspicious TLD
+   800	         SERGIO_SUBJECT_VIAGRA01  Viagra garbled subject
+   801	                     SHARE_50_50  Share the money 50/50
+   802	        SHOPIFY_IMG_NOT_RCVD_SFY  Shopify hosted image but message not from Shopify
+   803	                    SHORTCIRCUIT  Not all rules were run, due to a shortcircuited rule
+   804	             SHORTENER_SHORT_IMG  Short HTML + image + URL shortener
+   805	            SHORTENER_SHORT_SUBJ  URL shortener (avoiding URIBL?) + short subject
+   806	     SHORT_HELO_AND_INLINE_IMAGE  Short HELO string, with inline image
+   807	             SHORT_IMG_SUSP_NTLD  Short HTML + image + suspicious TLD
+   808	                  SHORT_SHORTNER  Short body with little more than a link to a shortener
+   809	           SINGLETS_LOW_CONTRAST  Single-letter formatted HTML + hidden text
+   810	                   SORTED_RECIPS  Recipient list is sorted by address
+   811	                  SPAMMY_XMAILER  X-Mailer string is common in spam and not in ham
+   812	                        SPF_FAIL  SPF: sender does not match SPF record (fail)
+   813	                   SPF_HELO_FAIL  SPF: HELO does not match SPF record (fail)
+   814	                SPF_HELO_NEUTRAL  SPF: HELO does not match SPF record (neutral)
+   815	                   SPF_HELO_NONE  SPF: HELO does not publish an SPF Record
+   816	                   SPF_HELO_PASS  SPF: HELO matches SPF record
+   817	               SPF_HELO_SOFTFAIL  SPF: HELO does not match SPF record (softfail)
+   818	                     SPF_NEUTRAL  SPF: sender does not match SPF record (neutral)
+   819	                        SPF_NONE  SPF: sender does not publish an SPF Record
+   820	                        SPF_PASS  SPF: sender matches SPF record
+   821	                    SPF_SOFTFAIL  SPF: sender does not match SPF record (softfail)
+   822	                   SPOOF_COM2COM  URI contains ".com" in middle and end
+   823	                   SPOOF_COM2OTH  URI contains ".com" in middle
+   824	        SPOOFED_FREEMAIL_NO_RDNS  From SPOOFED_FREEMAIL and no rDNS
+   825	         SPOOFED_FREEM_REPTO_CHN  Forged freemail sender with Chinese freemail reply-to
+   826	             SPOOFED_FREEM_REPTO  Forged freemail sender with freemail reply-to
+   827	         SPOOFED_FREEM_REPTO_RUS  Forged freemail sender with Russian freemail reply-to
+   828	                 SPOOF_GMAIL_MID  From Gmail but it doesn't seem to be...
+   829	                   SPOOF_NET2COM  URI contains ".net" or ".org", then ".com"
+   830	                STATIC_XPRIO_OLE  Static RDNS + X-Priority + MIMEOLE
+   831	                     STOCK_ALERT  Offers a alert about a stock
+   832	                 STOCK_IMG_CTYPE  Stock spam image part, with distinctive Content-Type header
+   833	              STOCK_IMG_HDR_FROM  Stock spam image part, with distinctive From line
+   834	                  STOCK_IMG_HTML  Stock spam image part, with distinctive HTML
+   835	               STOCK_IMG_OUTLOOK  Stock spam image part, with Outlook-like features
+   836	              STOCK_LOW_CONTRAST  Stocks + hidden text
+   837	                       STOCK_TIP  Stock tips
+   838	                      STRONG_BUY  Tells you about a strong buy
+   839	                   SUBJ_ALL_CAPS  Subject is all capitals
+   840	                    SUBJ_AS_SEEN  Subject contains "As Seen"
+   841	                  SUBJ_ATTENTION  ATTENTION in Subject
+   842	                        SUBJ_BUY  Subject line starts with Buy or Buying
+   843	                    SUBJ_DOLLARS  Subject starts with dollar amount
+   844	                    SUBJECT_DIET  Subject talks about losing pounds
+   845	              SUBJECT_DRUG_GAP_C  Subject contains a gappy version of 'cialis'
+   846	              SUBJECT_DRUG_GAP_L  Subject contains a gappy version of 'levitra'
+   847	              SUBJECT_DRUG_GAP_S  Subject contains a gappy version of 'soma'
+   848	              SUBJECT_DRUG_GAP_X  Subject contains a gappy version of 'xanax'
+   849	             SUBJECT_FUZZY_CHEAP  Attempt to obfuscate words in Subject:
+   850	              SUBJECT_FUZZY_MEDS  Attempt to obfuscate words in Subject:
+   851	             SUBJECT_FUZZY_PENIS  Attempt to obfuscate words in Subject:
+   852	              SUBJECT_FUZZY_TION  Attempt to obfuscate words in Subject:
+   853	             SUBJECT_FUZZY_VPILL  Attempt to obfuscate words in Subject:
+   854	            SUBJECT_IN_BLACKLIST  Subject: contains string in the user's black-list
+   855	            SUBJECT_IN_WHITELIST  Subject: contains string in the user's white-list
+   856	          SUBJECT_NEEDS_ENCODING  Subject is encoded but does not specify the encoding
+   857	                  SUBJECT_SEXUAL  Subject indicates sexually-explicit content
+   858	              SUBJ_ILLEGAL_CHARS  Subject: has too many raw illegal characters
+   859	                SUBJ_YOUR_FAMILY  Subject contains "Your Family"
+   860	                   SURBL_BLOCKED  ADMINISTRATOR NOTICE: The query to SURBL was blocked. See http://wiki.apache.org/spamassassin/DnsBlocklists\#dnsbl-block for more information.
+   861	               SUSPICIOUS_RECIPS  Similar addresses in recipient list
+   862	      SUSPNTLD_EXPIRATION_EXTORT  Susp NTLD with an expiration notice and lotsa money
+   863	             SUSP_UTF8_WORD_FROM  Word in From name using only suspicious UTF-8 characters
+   864	             SUSP_UTF8_WORD_SUBJ  Word in Subject using only suspicious UTF-8 characters
+   865	                        SYSADMIN  Supposedly from your IT department
+   866	            TBIRD_SUSP_MIME_BDRY  Unlikely Thunderbird MIME boundary
+   867	                  T_COMPENSATION  "Compensation"
+   868	         T_DATE_IN_FUTURE_Q_PLUS  Date: is over 4 months after Received: date
+   869	 T_DRUGS_ERECTILE_SHORT_SHORTNER  Short erectile drugs advert with T_URL_SHORTENER
+   870	                  TEQF_USR_IMAGE  To and from user nearly same + image
+   871	              TEQF_USR_MSGID_HEX  To and from user nearly same + unusual message ID
+   872	             TEQF_USR_MSGID_MALF  To and from user nearly same + malformed message ID
+   873	            T_FROMNAME_EQUALS_TO  From:name matches To:
+   874	        T_FROMNAME_SPOOFED_EMAIL  From:name looks like a spoofed email
+   875	                         THIS_AD  "This ad" and variants
+   876	           THIS_IS_ADV_SUSP_NTLD  This is an advertisement from a suspicious TLD
+   877	         T_KAM_HTML_FONT_INVALID  Test for Invalidly Named or Formatted Colors in HTML
+   878	                T_LOTTO_AGENT_FM  Claims Agent
+   879	              T_LOTTO_AGENT_RPLY  Claims Agent
+   880	                     T_LOTTO_URI  Claims Department URL
+   881	               T_MANY_HDRS_LCASE  Odd capitalization of multiple message headers
+   882	              TO_EQ_FM_DIRECT_MX  To == From and direct-to-MX
+   883	           TO_EQ_FM_DOM_HTML_IMG  To domain == From domain and HTML image link
+   884	          TO_EQ_FM_DOM_HTML_ONLY  To domain == From domain and HTML only
+   885	              TO_EQ_FM_HTML_ONLY  To == From and HTML only
+   886	                __TO_EQ_FROM_DOM  To: domain same as From: domain
+   887	                    __TO_EQ_FROM  To: same as From:
+   888	             __TO_EQ_FROM_USR_NN  To: username same as From: username sans trailing nums
+   889	                __TO_EQ_FROM_USR  To: username same as From: username
+   890	                      TO_IN_SUBJ  To address is in Subject
+   891	                    TO_MALFORMED  To: has a malformed address
+   892	            TO_NAME_SUBJ_NO_RDNS  Recipient username in subject + no rDNS
+   893	               TONLINE_FAKE_DKIM  t-online.de doesn't do DKIM
+   894	           TO_NO_BRKTS_FROM_MSSP  Multiple header formatting problems
+   895	            TO_NO_BRKTS_HTML_IMG  To: lacks brackets and HTML and one image
+   896	           TO_NO_BRKTS_HTML_ONLY  To: lacks brackets and HTML only
+   897	                TO_NO_BRKTS_MSFT  To: lacks brackets and supposed Microsoft tool
+   898	         TO_NO_BRKTS_NORDNS_HTML  To: lacks brackets and no rDNS and HTML only
+   899	                TO_NO_BRKTS_PCNT  To: lacks brackets + percentage
+   900	     TONOM_EQ_TOLOC_SHRT_SHRTNER  Short email with shortener and To:name eq To:local
+   901	              TO_TOO_MANY_WFH_01  Work-from-Home + many recipients
+   902	  T_PDS_FREEMAIL_REPLYTO_URISHRT  Freemail replyto with URI shortener
+   903	     T_PDS_FROM_2_EMAILS_SHRTNER  From 2 emails short email with little more than a URI shortener
+   904	                   T_PDS_PRO_TLD  .pro TLD
+   905	       T_PDS_SHORTFWD_URISHRT_FP  Apparently a short fwd/re with URI shortener
+   906	          T_PDS_SHORTFWD_URISHRT  Threaded email with URI shortener
+   907	    T_PDS_URISHRT_LOCALPART_SUBJ  Localpart of To in subject
+   908	                      TRACKER_ID  Incorporates a tracking ID number
+   909	                  TRANSFORM_LIFE  Transform your life!
+   910	            T_SENT_TO_EMAIL_ADDR  Email was sent to email address
+   911	            T_SPF_HELO_PERMERROR  SPF: test of HELO record failed (permerror)
+   912	            T_SPF_HELO_TEMPERROR  SPF: test of HELO record failed (temperror)
+   913	                 T_SPF_PERMERROR  SPF: test of record failed (permerror)
+   914	                 T_SPF_TEMPERROR  SPF: test of record failed (temperror)
+   915	                  TT_MSGID_TRUNC  Scora: Message-Id ends after left-bracket + digits
+   916	              TT_OBSCURED_VALIUM  Scora: obscured "VALIUM" in subject
+   917	              TT_OBSCURED_VIAGRA  Scora: obscured "VIAGRA" in subject
+   918	  T_TONOM_EQ_TOLOC_SHRT_PSHRTNER  Short subject with potential shortener and To:name eq To:local
+   919	                     TVD_ACT_193  Message refers to an act passed in the 1930s
+   920	                    TVD_APPROVED  Body states that the recipient has been approved
+   921	              TVD_DEAR_HOMEOWNER  Spam with generic salutation of "dear homeowner"
+   922	               TVD_ENVFROM_APOST  Envelope From contains single-quote
+   923	               TVD_FLOAT_GENERAL  Message uses CSS float style
+   924	                TVD_FUZZY_DEGREE  Obfuscation of the word "degree"
+   925	               TVD_FUZZY_FINANCE  Obfuscation of the word "finance"
+   926	            TVD_FUZZY_FIXED_RATE  Obfuscation of the phrase "fixed rate"
+   927	              TVD_FUZZY_MICROCAP  Obfuscation of the word "micro-cap"
+   928	        TVD_FUZZY_PHARMACEUTICAL  Obfuscation of the word "pharmaceutical"
+   929	                TVD_FUZZY_SYMBOL  Obfuscation of the word "symbol"
+   930	        TVD_FW_GRAPHIC_NAME_LONG  Long image attachment name
+   931	         TVD_FW_GRAPHIC_NAME_MID  Medium sized image attachment name
+   932	               TVD_INCREASE_SIZE  Advertising for penis enlargement
+   933	                   TVD_LINK_SAVE  Spam with the text "link to save"
+   934	        TVD_PH_BODY_ACCOUNTS_PRE  The body matches phrases such as "accounts suspended", "account credited", "account verification"
+   935	                      TVD_PH_REC  Message includes a phrase commonly used in phishing mails
+   936	                      TVD_PH_SEC  Message includes a phrase commonly used in phishing mails
+   937	                   TVD_QUAL_MEDS  The body matches phrases such as "quality meds" or "quality medication"
+   938	                TVD_RATWARE_CB_2  Content-Type header that is commonly indicative of ratware
+   939	                  TVD_RATWARE_CB  Content-Type header that is commonly indicative of ratware
+   940	            TVD_RATWARE_MSGID_02  Ratware with a Message-ID header that is entirely lower-case
+   941	                    TVD_RCVD_IP4  Message was received from an IPv4 address
+   942	                     TVD_RCVD_IP  Message was received from an IP address
+   943	                     TVD_SECTION  References to specific legal codes
+   944	              TVD_SILLY_URI_OBFU  URI obfuscation that can fool a URIBL or a uri rule
+   945	        TVD_SPACED_SUBJECT_WORD3  Entire subject is "UPPERlowerUPPER" with no whitespace
+   946	               TVD_SPACE_ENCODED  Space ratio & encoded subject
+   947	                      TVD_STOCK1  Spam related to stock trading
+   948	                TVD_SUBJ_ACC_NUM  Subject has spammy looking monetary reference
+   949	              TVD_SUBJ_FINGER_03  Entire subject is enclosed in asterisks "* like so *"
+   950	                    TVD_SUBJ_OWE  Subject line states that the recipieint is in debt
+   951	              TVD_SUBJ_WIPE_DEBT  Spam advertising a way to eliminate debt
+   952	                  TVD_VIS_HIDDEN  Invisible textarea HTML tags
+   953	                TVD_VISIT_PHARMA  Body mentions online pharmacy
+   954	               TW_GIBBERISH_MANY  Lots of gibberish text to spoof pattern matching filters
+   955	            T_XPRIO_URL_SHORTNER  X-Priority header and short URL
+   956	                           TXREP  Score normalizing based on sender's reputation
+   957	               UC_GIBBERISH_OBFU  Multiple instances of "word VERYLONGGIBBERISH word"
+   958	                 UNCLAIMED_MONEY  People just leave money laying around
+   959	                UNCLOSED_BRACKET  Headers contain an unclosed bracket
+   960	                    UNDISC_FREEM  Undisclosed recipients + freemail reply-to
+   961	                    UNDISC_MONEY  Undisclosed recipients + money/fraud signs
+   962	               UNPARSEABLE_RELAY  Informational: message has unparseable relay lines
+   963	             UNRESOLVED_TEMPLATE  Headers contain an unresolved template
+   964	          UNWANTED_LANGUAGE_BODY  Message written in an undesired language
+   965	                 UPPERCASE_50_75  message body is 50-75% uppercase
+   966	                UPPERCASE_75_100  message body is 75-100% uppercase
+   967	                         URG_BIZ  Contains urgent matter
+   968	              URI_AZURE_CLOUDAPP  Link to hosted azure web application, possible phishing
+   969	               URIBL_ABUSE_SURBL  Contains an URL listed in the ABUSE SURBL blocklist
+   970	                     URIBL_BLACK  Contains an URL listed in the URIBL blacklist
+   971	                   URIBL_BLOCKED  ADMINISTRATOR NOTICE: The query to URIBL was blocked. See http://wiki.apache.org/spamassassin/DnsBlocklists\#dnsbl-block for more information.
+   972	                  URIBL_CR_SURBL  Contains an URL listed in the CR SURBL blocklist
+   973	                       URIBL_CSS  Contains an URL's NS IP listed in the Spamhaus CSS blocklist
+   974	           URIBL_DBL_ABUSE_BOTCC  Contains an abused botnet C&C URL listed in the Spamhaus DBL blocklist
+   975	            URIBL_DBL_ABUSE_MALW  Contains an abused malware URL listed in the Spamhaus DBL blocklist
+   976	           URIBL_DBL_ABUSE_PHISH  Contains an abused phishing URL listed in the Spamhaus DBL blocklist
+   977	           URIBL_DBL_ABUSE_REDIR  Contains an abused redirector URL listed in the Spamhaus DBL blocklist
+   978	            URIBL_DBL_ABUSE_SPAM  Contains an abused spamvertized URL listed in the Spamhaus DBL blocklist
+   979	               URIBL_DBL_BLOCKED  ADMINISTRATOR NOTICE: The query to dbl.spamhaus.org was blocked. See https://www.spamhaus.org/returnc/vol/
+   980	       URIBL_DBL_BLOCKED_OPENDNS  ADMINISTRATOR NOTICE: The query to dbl.spamhaus.org was blocked due to usage of an open resolver. See https://www.spamhaus.org/returnc/pub/
+   981	              URIBL_DBL_BOTNETCC  Contains a botned C&C URL listed in the Spamhaus DBL blocklist
+   982	                 URIBL_DBL_ERROR  Error: queried the Spamhaus DBL blocklist for an IP
+   983	               URIBL_DBL_MALWARE  Contains a malware URL listed in the Spamhaus DBL blocklist
+   984	                 URIBL_DBL_PHISH  Contains a Phishing URL listed in the Spamhaus DBL blocklist
+   985	                  URIBL_DBL_SPAM  Contains a spam URL listed in the Spamhaus DBL blocklist
+   986	                      URIBL_GREY  Contains an URL listed in the URIBL greylist
+   987	                  URIBL_MW_SURBL  Contains a URL listed in the MW SURBL blocklist
+   988	                  URIBL_PH_SURBL  Contains an URL listed in the PH SURBL blocklist
+   989	                       URIBL_RED  Contains an URL listed in the URIBL redlist
+   990	                   URIBL_RHS_DOB  Contains an URI of a new domain (Day Old Bread)
+   991	                       URIBL_SBL  Contains an URL's NS IP listed in the Spamhaus SBL blocklist
+   992	                  URIBL_WS_SURBL  Contains an URL listed in the WS SURBL blocklist
+   993	               URIBL_ZEN_BLOCKED  ADMINISTRATOR NOTICE: The query to zen.spamhaus.org was blocked. See https://www.spamhaus.org/returnc/vol/
+   994	       URIBL_ZEN_BLOCKED_OPENDNS  ADMINISTRATOR NOTICE: The query to zen.spamhaus.org was blocked due to usage of an open resolver. See https://www.spamhaus.org/returnc/pub/
+   995	                  URI_DASHGOVEDU  Suspicious domain name
+   996	                        URI_DATA  "data:" URI - possible malware or phish
+   997	               URI_DOTEDU_ENTITY  Via .edu MTA + suspicious HTML content
+   998	                      URI_DOTEDU  Has .edu URI
+   999	                   URI_DOTTY_HEX  Suspicious URI format
+  1000	                    URI_DQ_UNSUB  IP-address unsubscribe URI
+  1001	                 URI_FIREBASEAPP  Link to hosted firebase web application, possible phishing
+  1002	                URI_GOOGLE_PROXY  Accessing a blacklisted URI or obscuring source of phish via Google proxy?
+  1003	             URI_GOOG_STO_SPAMMY  Link to spammy content hosted by google storage
+  1004	                      URI_HEX_IP  URI with hex-encoded IP-address host
+  1005	                         URI_HEX  URI hostname has long hexadecimal sequence
+  1006	                URI_IMG_WP_REDIR  Image via WordPress "accelerator" proxy
+  1007	                 URI_LONG_REPEAT  Very long identical host+domain
+  1008	                URI_MALWARE_SCMS  Link to malware exploit download (.SettingContent-ms file)
+  1009	                     URI_NOVOWEL  URI hostname has long non-vowel sequence
+  1010	              URI_NO_WWW_BIZ_CGI  CGI in .biz TLD other than third-level "www"
+  1011	             URI_NO_WWW_INFO_CGI  CGI in .info TLD other than third-level "www"
+  1012	                    URI_OBFU_DOM  URI pretending to be different domain
+  1013	             URI_ONLY_MSGID_MALF  URI only + malformed message ID
+  1014	                  URI_OPTOUT_3LD  Opt-out URI, suspicious hostname
+  1015	                 URI_OPTOUT_USME  Opt-out URI, unusual TLD
+  1016	                       URI_PHISH  Phishing using web form
+  1017	                   URI_PHP_REDIR  PHP redirect to different URL (link obfuscation)
+  1018	                   URI_TRUNCATED  Message contained a URI which was truncated
+  1019	                     URI_TRY_3LD  "Try it" URI, suspicious hostname
+  1020	                    URI_TRY_USME  "Try it" URI, unusual TLD
+  1021	                 URI_UNSUBSCRIBE  URI contains suspicious unsubscribe link
+  1022	                     URI_WPADMIN  WordPress login/admin URI, possible phishing
+  1023	                 URI_WP_DIRINDEX  URI for compromised WordPress site, possible malware
+  1024	                 URI_WP_HACKED_2  URI for compromised WordPress site, possible malware
+  1025	                   URI_WP_HACKED  URI for compromised WordPress site, possible malware
+  1026	                      USB_DRIVES  Trying to sell custom USB flash drives
+  1027	             USER_IN_DEF_DKIM_WL  From: address is in the default DKIM white-list
+  1028	              USER_IN_DEF_SPF_WL  From: address is in the default SPF white-list
+  1029	          USER_IN_DKIM_WHITELIST  From: address is in the user's DKIM whitelist
+  1030	           USER_IN_SPF_WHITELIST  From: address is in the user's SPF whitelist
+  1031	                 VBOUNCE_MESSAGE  Virus-scanner bounce message
+  1032	                 VFY_ACCT_NORDNS  Verify your account to a poorly-configured MTA - probable phishing
+  1033	                     VIA_GAP_GRA  Attempts to disguise the word 'viagra'
+  1034	                        __VIA_ML  Mail from a mailing list
+  1035	                  __VIA_RESIGNER  Mail through a popular signing remailer
+  1036	                     VPS_NO_NTLD  vps[0-9] domain at a suspiscious TLD
+  1037	        WALMART_IMG_NOT_RCVD_WAL  Walmart hosted image but message not from Walmart
+  1038	                      WEIRD_PORT  Uses non-standard port number for HTTP
+  1039	                   WEIRD_QUOTING  Weird repeated double-quotation marks
+  1040	                        WIKI_IMG  Image from wikipedia
+  1041	                    WITH_LC_SMTP  Received line contains spam-sign (lowercase smtp)
+  1042	                XFER_LOTSA_MONEY  Transfer a lot of money
+  1043	                            X_IP  Message has X-IP header
+  1044	                  XM_DIGITS_ONLY  X-Mailer malformed
+  1045	                  X_MESSAGE_INFO  Bulk email fingerprint (X-Message-Info) found
+  1046	                  XM_LIGHT_HEAVY  Special edition of a MUA
+  1047	             XM_PHPMAILER_FORGED  Apparently forged header
+  1048	                       XM_RANDOM  X-Mailer apparently random
+  1049	                      XM_RECPTID  Has spammy message header
+  1050	                           XPRIO  Has X-Priority header
+  1051	                   X_PRIORITY_CC  Cc: after X-Priority: (bulk email fingerprint)
+  1052	                XPRIO_SHORT_SUBJ  Has X Priority header + short subject
+  1053	                 YAHOO_DRS_REDIR  Has Yahoo Redirect URI
+  1054	                  YAHOO_RD_REDIR  Has Yahoo Redirect URI
+  1055	                     YOU_INHERIT  Discussing your inheritance
