@@ -1,4 +1,8 @@
 #!/usr/bin/perl
+
+# Original found at: https://github.com/CpanelInc/tech-SysSnapv2/blob/master/sys-snap.pl
+# README https://github.com/CpanelInc/tech-SysSnapv2/blob/master/README.md
+
 # Copyright (C) 2015
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
