@@ -653,7 +653,7 @@ sub run_install {
     my $sleep_time = 60;
 
     # The base directory under which to build the directory where snapshots are stored.
-    my $root_dir = '/root';
+    my $root_dir = '/var/log';
 
     # Sometimes you won't have mysql and/or you won't have the root password to put in a .my.cnf file
     # if that's the case, set this to 0
