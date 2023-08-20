@@ -141,7 +141,7 @@ sub snap_network {
     my $line_length = $opt{'line_length'};
 
     #root_dir is legacy param, will remove later
-    my $root_dir = "";
+    my $root_dir = "/var/log/system-snapshot";
 
     # the default formatting where the process ID is added needs 16 lines
     # subtracting 16 here will make the specified width more "true"
@@ -282,7 +282,7 @@ sub loadavg {
     my $snapshot_dir = $opt{'dir'};
 
     #root_dir is legacy param, will remove later
-    my $root_dir = "";
+    my $root_dir = "/var/log/system-snapshot";
 
     if ( $interval > 60 || $interval < 0 ) {
         $interval = 10;
@@ -405,7 +405,7 @@ sub snap_print_range {
     my $line_length = $opt{'line_length'};
 
     #root_dir is legacy param, will remove later
-    my $root_dir = "";
+    my $root_dir = "/var/log/system-snapshot";
 
     # the default formatting where the process ID is added needs 16 lines
     # subtracting 16 here will make the specified width more "true"
