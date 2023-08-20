@@ -664,7 +664,7 @@ sub run_install {
     my $apache = 1;
 
     # If you want extended data, set this to 1
-    my $max_data = 1;
+    my $max_data = 0;
 
     # Get the date, hour, and min for various tasks
     my ( $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst ) = localtime(time);
