@@ -37,7 +37,7 @@ my %opt = (
     'print_memory' => 1,
     'interval'     => 10,
     'loadavg'      => 0,
-    'dir'          => '/root/system-snapshot',
+    'dir'          => '/var/log/system-snapshot',
     'verbose'      => '0',
     'max-lines'    => '20',
     'line_length'  => '145',
@@ -234,7 +234,7 @@ sub snap_io {
     my $snapshot_dir = $opt{'dir'};
 
     #root_dir is legacy param, will remove later
-    my $root_dir = "";
+    my $root_dir = "/var/log/system-snapshot";
 
     if ( $interval > 60 || $interval < 0 ) {
         $interval = 10;
@@ -624,11 +624,11 @@ sub run_basic {
 
 sub run_install {
     if ( not check_status ) {
-        print "Start sys-snap logging to '/root/system-snapshot/' (y/n)?:";
+        print "Start sys-snap logging to '/var/log/system-snapshot/' (y/n)?:";
         my $choice = "0";
         $choice = <STDIN>;
         while ( $choice !~ /[yn]/i ) {
-            print "Start sys-snap logging to '/root/system-snapshot/' (y/n)?:";
+            print "Start sys-snap logging to '/var/log/system-snapshot/' (y/n)?:";
             $choice = <STDIN>;
             chomp($choice);
         }
