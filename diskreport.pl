@@ -91,10 +91,9 @@ sub do_options {
     [ 8 ] SHOW usage in /var/log
     [ 9 ] CLEAR Systemd Journal (only leave past hour)
     [ 10 ] FIND all WordPress debug.out files
-    [ 11 ] LIST inodes for working dir (WIP)
     [ 0 ] EXIT
 
-    Your choice (0 to 11): ";
+    Your choice (0 to 10): ";
 
     chomp ($choice=<STDIN>);
 }
