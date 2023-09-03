@@ -22,7 +22,7 @@ echo "WHOIS Nameservers for $domain and Dates"
 echo ""
 whois --no-recursion $domain|grep -i 'name server'|head -n4|awk {'print $3'}
 echo " ---------------------------"
-whois $domain|egrep "Updated Date|Registry Expiry"|head -n2|tr -d [:blank:]
+whois --no-recursion $domain|egrep 'Updated Date|Registry Expiry'|tr -s "  ";
 echo " ---------------------------"
 echo ""
 
