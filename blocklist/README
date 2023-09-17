@@ -1,5 +1,6 @@
-cxs.txt - Blocklist of IPs that tried to Exploit (cPanel, DirectAdmin, SMTP_AUTH, and CXS rules)
-cxsabuse.txt - Blocklist of IPs that tried to Exploit (cPanel, DirectAdmin, SMTP_AUTH, and CXS rules + 1K of the top 100 from AbuseIPDB
+cxs.txt - Blocklist of IPs that tried to Brute Force into (cPanel, DirectAdmin, SMTP), as well as upload malicious code (CXS)
+cxsabuse.txt - Same as above + 1K of the top 100 from AbuseIPDB
 
-Issues, email: cyber@webpods.com
-https://webpods.com
+Maintainer: Webpods, LLC
+Email: cyber@webpods.com
+Website: https://webpods.com
