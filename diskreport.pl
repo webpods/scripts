@@ -89,7 +89,7 @@ sub do_options {
     [ 6 ] DELETE all softaculous backup archives from /home (!!)
     [ 7 ] DELETE all cPanel user trash files (!!)
     [ 8 ] SHOW usage in /var/log
-    [ 9 ] CLEAR Systemd Journal (only leave past hour)
+    [ 9 ] CLEAR System journal (only leave past hour)
     [ 10 ] FIND all WordPress debug.out files
     [ 0 ] EXIT
 
