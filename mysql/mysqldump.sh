@@ -1,5 +1,5 @@
 #!/bin/bash
-# mySQL Dumper v1
+# mySQL Dumper v1.1
 # github.com/webpods/scripts/
 # cyber@webpods.com
 
@@ -27,7 +27,7 @@ tstamp=`date +%s`
 	if [ -z $1 ]
 	then
 		echo "Entering Interactive mode"
-		echo "Dump mySQL to what dir? Without the trailing /"
+		echo "Dump mySQL to what dir? Without the trailing / (if left blank cwd is used)"
 		read DIR
 
 		mdump
