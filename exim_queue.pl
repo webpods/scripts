@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 # Script revised by Webpods, LLC
 # https://webpods.com - cyber@webpods.com
+# github.com/webpods/scripts/
 
 # exim_queue.pl - Generates report of current exim queue in .. #
 
