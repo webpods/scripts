@@ -4,7 +4,11 @@
 # Original from https://github.com/lukapaunovic/convert-to-innodb/tree/master
 
 #DATABASES="db1 db2"     # Convert databases db1 and db2 only
-DATABASES="ALL"         # Convert all databases
+#DATABASES="ALL"         # Convert all databases
+echo "Which databases? Type ALL for all"
+read db
+DATABASES="$db"     # Convert databases db1 and db2 only
+
 MYSQL_USER=root
 
 # Uncomment if you're not using ~/.my.cnf file (will receive "Warning: Using a password on the command line interface can be insecure" warnings)
